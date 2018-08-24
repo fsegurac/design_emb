@@ -33,6 +33,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:stm32
 LIBS:Lattice
+LIBS:stm32f446zetx
 LIBS:design_emb-cache
 EELAYER 25 0
 EELAYER END
@@ -53,5 +54,6 @@ S 1550 1400 12800 8600
 U 5B7D9546
 F0 "Sheet1" 60
 F1 "hoja1.sch" 60
+F2 "FMC[15:0]" I R 14350 1800 60 
 $EndSheet
 $EndSCHEMATC

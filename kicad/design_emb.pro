@@ -1,4 +1,4 @@
-update=mié 22 ago 2018 18:38:29 -05
+update=jue 23 ago 2018 23:43:39 -05
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
@@ -63,3 +61,16 @@ LibName31=contrib
 LibName32=valves
 LibName33=stm32
 LibName34=Lattice
+LibName35=stm32f446zetx
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
+[general]
+version=1

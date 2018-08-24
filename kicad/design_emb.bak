@@ -31,6 +31,10 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:stm32
+LIBS:Lattice
+LIBS:stm32f446zetx
+LIBS:design_emb-cache
 EELAYER 25 0
 EELAYER END
 $Descr A0 46811 33110
