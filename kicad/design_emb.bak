@@ -7,7 +7,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A0 46811 33110
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -18,10 +18,16 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1550 1400 12800 8600
+S 8650 9400 11850 10200
 U 5B7D9546
 F0 "Sheet1" 60
-F1 "hoja1.sch" 60
-F2 "FMC[15:0]" I R 14350 1800 60 
+F1 "STM32F446ZETx.sch" 60
+F2 "FMC[15:0]" I R 20500 9800 60 
+$EndSheet
+$Sheet
+S 28100 5500 5200 7550
+U 5B86E517
+F0 "Sheet2" 60
+F1 "OMEGA2sch.sch" 60
 $EndSheet
 $EndSCHEMATC
