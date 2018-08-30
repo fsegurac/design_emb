@@ -744,6 +744,14 @@ Wire Wire Line
 	8850 1550 9150 1550
 Text Notes 1100 1100 0    197  ~ 0
 0.1 uF - Tantalum capacitors 
+Wire Wire Line
+	6250 6450 5900 6450
+Text HLabel 5900 6450 0    60   Input ~ 0
+BOOT0
+Wire Notes Line
+	550  18600 19800 18600
+Wire Notes Line
+	19800 18600 19800 500 
 Wire Bus Line
 	16600 12450 16600 12650
 Wire Wire Line
