@@ -748,10 +748,8 @@ Wire Wire Line
 	6250 6450 5900 6450
 Text HLabel 5900 6450 0    60   Input ~ 0
 BOOT0
-Wire Notes Line
-	550  18600 19800 18600
-Wire Notes Line
-	19800 18600 19800 500 
+Wire Notes Line style dash_dot
+	600  16850 19850 16850
 Wire Wire Line
 	15650 8050 16400 8050
 Text HLabel 16400 8050 2    60   Input ~ 0
@@ -861,9 +859,177 @@ F 3 "" H 16100 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 17350 1100 2    197  Italic 0
-User comunnication serial \n
+User serial communication\n\n
 Text Notes 15950 2650 2    98   ~ 0
 SR3.3.TCT / SR2.8.TCT
+Wire Wire Line
+	15650 10950 16150 10950
+Wire Wire Line
+	15650 11050 16150 11050
+Text HLabel 16150 10950 2    60   Input ~ 0
+OSC32_IN
+Text HLabel 16150 11050 2    60   Output ~ 0
+OSC32_OUT
+$Comp
+L Device:Crystal Y?
+U 1 1 5B91A6BE
+P 4850 14650
+F 0 "Y?" H 4850 14918 50  0000 C CNN
+F 1 "Crystal" H 4850 14827 50  0000 C CNN
+F 2 "" H 4850 14650 50  0001 C CNN
+F 3 "~" H 4850 14650 50  0001 C CNN
+	1    4850 14650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 14650 4550 14650
+Wire Wire Line
+	4550 14650 4550 14300
+Wire Wire Line
+	5000 14650 5150 14650
+Wire Wire Line
+	5150 14650 5150 14300
+$Comp
+L Device:CP1 C?
+U 1 1 5B923F54
+P 4550 14950
+F 0 "C?" H 4665 14996 50  0000 L CNN
+F 1 "CP1" H 4665 14905 50  0000 L CNN
+F 2 "" H 4550 14950 50  0001 C CNN
+F 3 "~" H 4550 14950 50  0001 C CNN
+	1    4550 14950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5B923FA0
+P 5150 14950
+F 0 "C?" H 5265 14996 50  0000 L CNN
+F 1 "CP1" H 5265 14905 50  0000 L CNN
+F 2 "" H 5150 14950 50  0001 C CNN
+F 3 "~" H 5150 14950 50  0001 C CNN
+	1    5150 14950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 14800 4550 14650
+Connection ~ 4550 14650
+Wire Wire Line
+	5150 14800 5150 14650
+Connection ~ 5150 14650
+$Comp
+L power:GND #PWR?
+U 1 1 5B92DB51
+P 4550 15100
+F 0 "#PWR?" H 4550 14850 50  0001 C CNN
+F 1 "GND" H 4555 14927 50  0000 C CNN
+F 2 "" H 4550 15100 50  0001 C CNN
+F 3 "" H 4550 15100 50  0001 C CNN
+	1    4550 15100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B92DBB2
+P 5150 15100
+F 0 "#PWR?" H 5150 14850 50  0001 C CNN
+F 1 "GND" H 5155 14927 50  0000 C CNN
+F 2 "" H 5150 15100 50  0001 C CNN
+F 3 "" H 5150 15100 50  0001 C CNN
+	1    5150 15100
+	1    0    0    -1  
+$EndComp
+Text HLabel 4550 14300 1    60   Input ~ 0
+OSC32_IN
+Text HLabel 5150 14300 1    60   Output ~ 0
+OSC32_OUT
+$Comp
+L Device:Crystal Y?
+U 1 1 5B92DDF6
+P 6350 14650
+F 0 "Y?" H 6350 14918 50  0000 C CNN
+F 1 "Crystal" H 6350 14827 50  0000 C CNN
+F 2 "" H 6350 14650 50  0001 C CNN
+F 3 "~" H 6350 14650 50  0001 C CNN
+	1    6350 14650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 14650 6050 14650
+Wire Wire Line
+	6050 14650 6050 14300
+Wire Wire Line
+	6500 14650 6650 14650
+Wire Wire Line
+	6650 14650 6650 14300
+$Comp
+L Device:CP1 C?
+U 1 1 5B92DE01
+P 6050 14950
+F 0 "C?" H 6165 14996 50  0000 L CNN
+F 1 "CP1" H 6165 14905 50  0000 L CNN
+F 2 "" H 6050 14950 50  0001 C CNN
+F 3 "~" H 6050 14950 50  0001 C CNN
+	1    6050 14950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5B92DE08
+P 6650 14950
+F 0 "C?" H 6765 14996 50  0000 L CNN
+F 1 "CP1" H 6765 14905 50  0000 L CNN
+F 2 "" H 6650 14950 50  0001 C CNN
+F 3 "~" H 6650 14950 50  0001 C CNN
+	1    6650 14950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 14800 6050 14650
+Connection ~ 6050 14650
+Wire Wire Line
+	6650 14800 6650 14650
+Connection ~ 6650 14650
+$Comp
+L power:GND #PWR?
+U 1 1 5B92DE13
+P 6050 15100
+F 0 "#PWR?" H 6050 14850 50  0001 C CNN
+F 1 "GND" H 6055 14927 50  0000 C CNN
+F 2 "" H 6050 15100 50  0001 C CNN
+F 3 "" H 6050 15100 50  0001 C CNN
+	1    6050 15100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B92DE19
+P 6650 15100
+F 0 "#PWR?" H 6650 14850 50  0001 C CNN
+F 1 "GND" H 6655 14927 50  0000 C CNN
+F 2 "" H 6650 15100 50  0001 C CNN
+F 3 "" H 6650 15100 50  0001 C CNN
+	1    6650 15100
+	1    0    0    -1  
+$EndComp
+Text HLabel 6050 14300 1    60   Input ~ 0
+OSC_IN
+Text HLabel 6650 14300 1    60   Output ~ 0
+OSC_OUT
+Wire Wire Line
+	6250 7550 5950 7550
+Wire Wire Line
+	6250 7650 5950 7650
+Text HLabel 5950 7550 0    60   Input ~ 0
+OSC_IN
+Text HLabel 5950 7650 0    60   Output ~ 0
+OSC_OUT
+Text Notes 4350 14300 3    60   ~ 0
+OSC32= 32,768 KHz\n
+Text Notes 5900 14650 3    60   ~ 0
+OSC= 16MHz
+Wire Notes Line style dash_dot
+	19850 16850 19850 450 
 Wire Bus Line
 	16600 12450 16600 12650
 Wire Wire Line

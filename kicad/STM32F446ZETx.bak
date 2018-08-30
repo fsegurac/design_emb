@@ -742,7 +742,7 @@ VDDUSB
 Connection ~ 9150 1550
 Wire Wire Line
 	8850 1550 9150 1550
-Text Notes 1100 1100 0    197  ~ 0
+Text Notes 1400 2900 0    98   ~ 0
 0.1 uF - Tantalum capacitors 
 Wire Wire Line
 	6250 6450 5900 6450
@@ -752,6 +752,118 @@ Wire Notes Line
 	550  18600 19800 18600
 Wire Notes Line
 	19800 18600 19800 500 
+Wire Wire Line
+	15650 8050 16400 8050
+Text HLabel 16400 8050 2    60   Input ~ 0
+BOOT1
+Wire Wire Line
+	15650 11450 16150 11450
+Wire Wire Line
+	15650 10750 16150 10750
+Text HLabel 16150 10750 2    60   Output ~ 0
+TX
+Text HLabel 16150 11450 2    60   Input ~ 0
+RX
+$Comp
+L ESD_Protection:SRX.X.TCT U?
+U 1 1 5B8D2986
+P 15100 1600
+F 0 "U?" H 15000 1400 60  0000 C CNN
+F 1 "SRX.X.TCT" H 15100 1841 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-143" H 15100 1600 60  0001 C CNN
+F 3 "https://co.mouser.com/datasheet/2/761/sr2_8-1277654.pdf" H 15100 1600 60  0001 C CNN
+	1    15100 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14800 1500 14700 1500
+$Comp
+L power:GND #PWR?
+U 1 1 5B8DE647
+P 14700 1500
+F 0 "#PWR?" H 14700 1250 50  0001 C CNN
+F 1 "GND" V 14705 1372 50  0000 R CNN
+F 2 "" H 14700 1500 50  0001 C CNN
+F 3 "" H 14700 1500 50  0001 C CNN
+	1    14700 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14800 1700 14650 1700
+Text HLabel 14650 1700 0    60   Input ~ 0
+TX
+$Comp
+L ESD_Protection:SRX.X.TCT U?
+U 1 1 5B8E61E7
+P 15100 2150
+F 0 "U?" H 15000 1950 60  0000 C CNN
+F 1 "SRX.X.TCT" H 15100 2391 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-143" H 15100 2150 60  0001 C CNN
+F 3 "https://co.mouser.com/datasheet/2/761/sr2_8-1277654.pdf" H 15100 2150 60  0001 C CNN
+	1    15100 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14800 2050 14700 2050
+$Comp
+L power:GND #PWR?
+U 1 1 5B8E61EF
+P 14700 2050
+F 0 "#PWR?" H 14700 1800 50  0001 C CNN
+F 1 "GND" V 14705 1922 50  0000 R CNN
+F 2 "" H 14700 2050 50  0001 C CNN
+F 3 "" H 14700 2050 50  0001 C CNN
+	1    14700 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14800 2250 14650 2250
+Text HLabel 14650 2250 0    60   Input ~ 0
+RX
+NoConn ~ 15400 1500
+NoConn ~ 15400 2050
+$Comp
+L conn:Conn_01x03 J?
+U 1 1 5B8F6811
+P 16400 1800
+F 0 "J?" H 16480 1842 50  0000 L CNN
+F 1 "Conn_01x03" H 16480 1751 50  0000 L CNN
+F 2 "" H 16400 1800 50  0001 C CNN
+F 3 "~" H 16400 1800 50  0001 C CNN
+	1    16400 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16200 1700 15400 1700
+Wire Wire Line
+	16200 1800 15500 1800
+Wire Wire Line
+	15500 1800 15500 2250
+Wire Wire Line
+	15500 2250 15400 2250
+Text Label 16050 1700 2    60   ~ 0
+RX_OUT
+Text Label 16000 1800 2    60   ~ 0
+TX_IN
+Wire Wire Line
+	16200 1900 16100 1900
+Wire Wire Line
+	16100 1900 16100 2100
+$Comp
+L power:GND #PWR?
+U 1 1 5B9073E7
+P 16100 2100
+F 0 "#PWR?" H 16100 1850 50  0001 C CNN
+F 1 "GND" H 16105 1927 50  0000 C CNN
+F 2 "" H 16100 2100 50  0001 C CNN
+F 3 "" H 16100 2100 50  0001 C CNN
+	1    16100 2100
+	1    0    0    -1  
+$EndComp
+Text Notes 17350 1100 2    197  Italic 0
+User comunnication serial \n
+Text Notes 15950 2650 2    98   ~ 0
+SR3.3.TCT / SR2.8.TCT
 Wire Bus Line
 	16600 12450 16600 12650
 Wire Wire Line
