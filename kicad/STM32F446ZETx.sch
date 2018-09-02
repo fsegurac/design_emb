@@ -1,11 +1,13 @@
 EESchema Schematic File Version 4
+LIBS:power
+LIBS:74xx
 LIBS:stm32f446zetx
 LIBS:design_emb-cache
 EELAYER 26 0
 EELAYER END
 $Descr A0 46811 33110
 encoding utf-8
-Sheet 2 3
+Sheet 2 4
 Title ""
 Date ""
 Rev ""

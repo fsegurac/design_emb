@@ -7,7 +7,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A0 46811 33110
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -29,5 +29,11 @@ S 28100 5500 5200 7550
 U 5B86E517
 F0 "Sheet2" 60
 F1 "OMEGA2sch.sch" 60
+$EndSheet
+$Sheet
+S 28350 15750 6000 8800
+U 5B8BCB6B
+F0 "sheet3" 60
+F1 "fpga.sch" 60
 $EndSheet
 $EndSCHEMATC
