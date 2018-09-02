@@ -31,4 +31,42 @@ F 8 "None" H 5850 3500 50  0001 L BNN "Campo8"
 	1    5850 3500
 	1    0    0    -1  
 $EndComp
+Text HLabel 7050 2500 2    60   Input ~ 0
+VDD
+Text HLabel 7050 2600 2    60   Input ~ 0
+V3.3OUT
+Text HLabel 4550 3700 0    60   BiDi ~ 0
+SPI_MISO
+Text HLabel 4550 3600 0    60   BiDi ~ 0
+SPI_MOSI
+Wire Wire Line
+	4550 3700 4650 3700
+Wire Wire Line
+	4550 3600 4650 3600
+$Comp
+L power:GND #PWR?
+U 1 1 5B916F98
+P 7600 4400
+F 0 "#PWR?" H 7600 4150 50  0001 C CNN
+F 1 "GND" V 7605 4272 50  0000 R CNN
+F 2 "" H 7600 4400 50  0001 C CNN
+F 3 "" H 7600 4400 50  0001 C CNN
+	1    7600 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B916FF6
+P 7600 4500
+F 0 "#PWR?" H 7600 4250 50  0001 C CNN
+F 1 "GND" V 7605 4372 50  0000 R CNN
+F 2 "" H 7600 4500 50  0001 C CNN
+F 3 "" H 7600 4500 50  0001 C CNN
+	1    7600 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7050 4400 7600 4400
+Wire Wire Line
+	7050 4500 7600 4500
 $EndSCHEMATC
