@@ -1,8 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:power
-LIBS:74xx
 LIBS:stm32f446zetx
-LIBS:design_emb-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -71,4 +68,12 @@ Wire Wire Line
 	7050 4400 7600 4400
 Wire Wire Line
 	7050 4500 7600 4500
+Text HLabel 4550 3400 0    60   BiDi ~ 0
+SPI_CS
+Wire Wire Line
+	4550 3400 4650 3400
+Text HLabel 4550 3500 0    60   BiDi ~ 0
+SPI_CLK
+Wire Wire Line
+	4550 3500 4650 3500
 $EndSCHEMATC

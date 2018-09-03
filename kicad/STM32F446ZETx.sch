@@ -1,8 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:power
-LIBS:74xx
 LIBS:stm32f446zetx
-LIBS:design_emb-cache
 EELAYER 26 0
 EELAYER END
 $Descr A0 46811 33110
@@ -1108,6 +1105,10 @@ Text HLabel 16000 8150 2    60   BiDi ~ 0
 SPI_SCK
 Wire Wire Line
 	15650 8150 16000 8150
+Text HLabel 16000 7650 2    60   BiDi ~ 0
+SPI_CS
+Wire Wire Line
+	16000 7650 15650 7650
 Wire Wire Line
 	15650 12350 16500 12350
 Wire Bus Line

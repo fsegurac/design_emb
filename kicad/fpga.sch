@@ -1,8 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:power
-LIBS:74xx
 LIBS:stm32f446zetx
-LIBS:design_emb-cache
 EELAYER 26 0
 EELAYER END
 $Descr A2 23386 16535
@@ -28,4 +25,45 @@ F 3 "http://www.latticesemi.com/~/media/LatticeSemi/Documents/DataSheets/iCE/iCE
 	1    11900 7200
 	1    0    0    -1  
 $EndComp
+Text HLabel 9100 11250 0    60   BiDi ~ 0
+SPI_CLK
+Text HLabel 9100 11350 0    60   BiDi ~ 0
+SPI_CS
+Text HLabel 9100 11150 0    60   BiDi ~ 0
+SPI_MOSI
+Text HLabel 9100 11050 0    60   BiDi ~ 0
+SPI_MISO
+Wire Wire Line
+	9100 11050 9250 11050
+Wire Wire Line
+	9100 11150 9250 11150
+Wire Wire Line
+	9100 11250 9250 11250
+Wire Wire Line
+	9100 11350 9250 11350
+Text HLabel 11450 2950 1    60   Input ~ 0
+VCC
+Wire Wire Line
+	11300 3300 11300 3050
+Wire Wire Line
+	11300 3050 11400 3050
+Wire Wire Line
+	11400 3300 11400 3050
+Connection ~ 11400 3050
+Wire Wire Line
+	11500 3300 11500 3050
+Wire Wire Line
+	11400 3050 11450 3050
+Wire Wire Line
+	11600 3300 11600 3050
+Wire Wire Line
+	11600 3050 11500 3050
+Connection ~ 11500 3050
+Wire Wire Line
+	11450 2950 11450 3050
+Connection ~ 11450 3050
+Wire Wire Line
+	11450 3050 11500 3050
+Text Notes 11100 2650 0    60   ~ 0
+VCC Max: 1.4 V
 $EndSCHEMATC
