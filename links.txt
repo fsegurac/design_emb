@@ -2,6 +2,7 @@ MANUAL KICAD: http://docs.kicad-pcb.org/4.0.7/es/getting_started_in_kicad.html
 STM32F446ZE: https://www.st.com/en/microcontrollers/stm32f446ze.html#samplebuy-scroll
 SR3.3.TCT: https://www.semtech.com/uploads/documents/sr3.3.pdf
 SR2.8.TCT: https://co.mouser.com/datasheet/2/761/sr2_8-1277654.pdf
+V. REGULATOR: https://www.digikey.com/products/en/integrated-circuits-ics/pmic-voltage-regulators-linear/699?k=TLV75733PDBVR&pkeyword=&FV=ffe002bb&quantity=0&ColumnSort=0&page=1&pageSize=25
 
 
 
