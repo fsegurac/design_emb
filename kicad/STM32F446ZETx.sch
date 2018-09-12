@@ -1204,6 +1204,9 @@ Wire Wire Line
 	10200 1900 10100 1900
 Wire Wire Line
 	10100 1600 10100 1900
+Connection ~ 10100 1600
+Wire Wire Line
+	10100 1600 10200 1600
 Wire Wire Line
 	15650 12350 16500 12350
 Wire Bus Line
@@ -1214,7 +1217,4 @@ Wire Bus Line
 	5600 9050 5600 11750
 Wire Bus Line
 	5550 11850 5550 12650
-Connection ~ 10100 1600
-Wire Wire Line
-	10100 1600 10200 1600
 $EndSCHEMATC
