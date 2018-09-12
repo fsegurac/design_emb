@@ -1,8 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:power
-LIBS:74xx
 LIBS:stm32f446zetx
-LIBS:design_emb-cache
 EELAYER 26 0
 EELAYER END
 $Descr A2 23386 16535
@@ -28,22 +25,6 @@ F 3 "http://www.latticesemi.com/~/media/LatticeSemi/Documents/DataSheets/iCE/iCE
 	1    11900 7200
 	1    0    0    -1  
 $EndComp
-Text HLabel 9100 11250 0    60   BiDi ~ 0
-SPI_CLK
-Text HLabel 9100 11350 0    60   BiDi ~ 0
-SPI_CS
-Text HLabel 9100 11150 0    60   BiDi ~ 0
-SPI_MOSI
-Text HLabel 9100 11050 0    60   BiDi ~ 0
-SPI_MISO
-Wire Wire Line
-	9100 11050 9250 11050
-Wire Wire Line
-	9100 11150 9250 11150
-Wire Wire Line
-	9100 11250 9250 11250
-Wire Wire Line
-	9100 11350 9250 11350
 Text HLabel 11450 2950 1    60   Input ~ 0
 VCC
 Wire Wire Line
@@ -69,4 +50,102 @@ Wire Wire Line
 	11450 3050 11500 3050
 Text Notes 11100 2650 0    60   ~ 0
 VCC Max: 1.4 V
+Text Label 8550 11050 0    60   ~ 0
+ICE40_MISO
+Text Label 8550 11150 0    60   ~ 0
+ICE40_MOSI
+Text Label 8550 11250 0    60   ~ 0
+ICE40_SCLK
+Text Label 8550 11350 0    60   ~ 0
+ICE40_SS
+Text Label 8550 10850 0    60   ~ 0
+ICE40_RESETB
+Wire Wire Line
+	8450 10850 9250 10850
+Wire Wire Line
+	8450 11050 9250 11050
+Wire Wire Line
+	8450 11150 9250 11150
+Wire Wire Line
+	8450 11250 9250 11250
+Wire Wire Line
+	8450 11350 9250 11350
+Wire Bus Line
+	8350 10650 8250 10650
+Entry Wire Line
+	8350 10950 8450 10850
+Entry Wire Line
+	8350 11150 8450 11050
+Entry Wire Line
+	8350 11250 8450 11150
+Entry Wire Line
+	8350 11350 8450 11250
+Entry Wire Line
+	8350 11450 8450 11350
+Text HLabel 8250 10650 0    60   BiDi ~ 0
+ICE40_SPI[4...0]
+Wire Wire Line
+	11500 11800 11500 12000
+Wire Wire Line
+	11500 12000 11600 12000
+Wire Wire Line
+	12450 12000 12450 11800
+Wire Wire Line
+	11600 11800 11600 12000
+Connection ~ 11600 12000
+Wire Wire Line
+	11600 12000 11700 12000
+Wire Wire Line
+	11700 11800 11700 12000
+Connection ~ 11700 12000
+Wire Wire Line
+	11700 12000 11800 12000
+Wire Wire Line
+	11800 11800 11800 12000
+Connection ~ 11800 12000
+Wire Wire Line
+	11800 12000 11900 12000
+Wire Wire Line
+	11900 11800 11900 12000
+Connection ~ 11900 12000
+Wire Wire Line
+	12000 11800 12000 12000
+Wire Wire Line
+	11900 12000 11950 12000
+Connection ~ 12000 12000
+Wire Wire Line
+	12000 12000 12100 12000
+Wire Wire Line
+	12100 11800 12100 12000
+Connection ~ 12100 12000
+Wire Wire Line
+	12200 11800 12200 12000
+Wire Wire Line
+	12100 12000 12200 12000
+Connection ~ 12200 12000
+Wire Wire Line
+	12200 12000 12300 12000
+Wire Wire Line
+	12300 11800 12300 12000
+Connection ~ 12300 12000
+Wire Wire Line
+	12300 12000 12450 12000
+$Comp
+L power:GND #PWR?
+U 1 1 5B997ACB
+P 11950 12150
+F 0 "#PWR?" H 11950 11900 50  0001 C CNN
+F 1 "GND" H 11955 11977 50  0000 C CNN
+F 2 "" H 11950 12150 50  0001 C CNN
+F 3 "" H 11950 12150 50  0001 C CNN
+	1    11950 12150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11950 12000 11950 12150
+Wire Bus Line
+	8350 10650 8350 11450
+Connection ~ 11950 12000
+Wire Wire Line
+	11950 12000 12000 12000
 $EndSCHEMATC
