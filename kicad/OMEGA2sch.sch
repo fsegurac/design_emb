@@ -7,7 +7,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 5 5
 Title ""
 Date ""
 Rev ""
@@ -33,7 +33,7 @@ F 8 "None" H 5850 3500 50  0001 L BNN "Campo8"
 	1    5850 3500
 	1    0    0    -1  
 $EndComp
-Text HLabel 7050 2500 2    60   Input ~ 0
+Text HLabel 8250 2500 2    60   Input ~ 0
 VDD
 Text HLabel 7050 2600 2    60   Input ~ 0
 V3.3OUT
@@ -79,4 +79,41 @@ Text HLabel 4550 3500 0    60   BiDi ~ 0
 SPI_CLK
 Wire Wire Line
 	4550 3500 4650 3500
+Text HLabel 7050 3100 2    60   Output ~ 0
+SERIAL_TX
+Text HLabel 7050 3200 2    60   Input ~ 0
+SERIAL_RX
+Text HLabel 7050 3400 2    60   Input ~ 0
+UART_RX
+Text HLabel 7050 3300 2    60   Output ~ 0
+UART_TX
+Wire Wire Line
+	7050 2500 7950 2500
+$Comp
+L device:CP1 C?
+U 1 1 5B9A6A14
+P 7950 2750
+F 0 "C?" H 8065 2796 50  0000 L CNN
+F 1 "100nF" H 8065 2705 50  0000 L CNN
+F 2 "" H 7950 2750 50  0001 C CNN
+F 3 "" H 7950 2750 50  0001 C CNN
+	1    7950 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 2600 7950 2500
+Connection ~ 7950 2500
+Wire Wire Line
+	7950 2500 8250 2500
+$Comp
+L power:GND #PWR?
+U 1 1 5B9A6AE7
+P 7950 2900
+F 0 "#PWR?" H 7950 2650 50  0001 C CNN
+F 1 "GND" H 7955 2727 50  0000 C CNN
+F 2 "" H 7950 2900 50  0001 C CNN
+F 3 "" H 7950 2900 50  0001 C CNN
+	1    7950 2900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
