@@ -14,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L ICE40HC1k:ICE40HX1K U?
-U 1 1 5B8D3D93
-P 11900 7200
-F 0 "U?" H 11825 11278 50  0000 C CNN
-F 1 "ICE40HX1K" H 11825 11187 50  0000 C CNN
-F 2 "Package_QFP:TQFP-144_20x20mm_P0.5mm" H 14100 10975 50  0001 R TNN
-F 3 "http://www.latticesemi.com/~/media/LatticeSemi/Documents/DataSheets/iCE/iCE40LPHXFamilyDataSheet.pdf" H 9450 10925 50  0001 C CNN
-	1    11900 7200
-	1    0    0    -1  
-$EndComp
 Text HLabel 11450 2950 1    60   Input ~ 0
 VCC1.2
 Wire Wire Line
@@ -192,20 +181,65 @@ Wire Wire Line
 Wire Wire Line
 	11800 3050 11600 3050
 Connection ~ 11600 3050
-NoConn ~ 14500 9500
-NoConn ~ 14500 9600
-NoConn ~ 14500 9700
-NoConn ~ 14500 9800
-NoConn ~ 14500 9900
-NoConn ~ 14500 10000
+NoConn ~ 14400 9500
+NoConn ~ 14400 9600
+NoConn ~ 14400 9700
+NoConn ~ 14400 9800
+NoConn ~ 14400 9900
+NoConn ~ 14400 10000
+$Comp
+L ICE40HC1k:ICE40HX1K U?
+U 1 1 5B8D3D93
+P 11900 7200
+F 0 "U?" H 11825 11278 50  0000 C CNN
+F 1 "ICE40HX1K" H 11825 11187 50  0000 C CNN
+F 2 "Package_QFP:TQFP-144_20x20mm_P0.5mm" H 14100 10975 50  0001 R TNN
+F 3 "http://www.latticesemi.com/~/media/LatticeSemi/Documents/DataSheets/iCE/iCE40LPHXFamilyDataSheet.pdf" H 9450 10925 50  0001 C CNN
+	1    11900 7200
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	14400 9500 14500 9500
+	14400 10100 15150 10100
 Wire Wire Line
-	14400 9600 14500 9600
+	14400 10200 15150 10200
 Wire Wire Line
-	14400 9700 14500 9700
+	14400 10300 15150 10300
 Wire Wire Line
-	14400 9800 14500 9800
+	14400 10400 15150 10400
+Wire Wire Line
+	14400 8800 15150 8800
+Text Label 14550 8800 0    60   ~ 0
+ICE40_NAVD
+Text Label 14500 10100 0    60   ~ 0
+ICE40_NE
+Text Label 14500 10200 0    60   ~ 0
+ICE40_NWAIT
+Text Label 14500 10300 0    60   ~ 0
+ICE40_NWE
+Text Label 14500 10400 0    60   ~ 0
+ICE40_NOE
+Wire Wire Line
+	14400 8000 15150 8000
+Text Label 14500 8000 0    60   ~ 0
+ICE40_FMCCLK
+Entry Wire Line
+	15150 10400 15250 10500
+Entry Wire Line
+	15150 10300 15250 10400
+Entry Wire Line
+	15150 10200 15250 10300
+Entry Wire Line
+	15150 10100 15250 10200
+Entry Wire Line
+	15150 8800 15250 8900
+Entry Wire Line
+	15150 8000 15250 8100
+Wire Bus Line
+	15250 8000 15500 8000
+Text HLabel 15500 8000 2    60   Input ~ 0
+Cont[5...0]
 Wire Bus Line
 	7800 10650 7800 11450
+Wire Bus Line
+	15250 8000 15250 10500
 $EndSCHEMATC
