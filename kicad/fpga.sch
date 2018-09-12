@@ -199,17 +199,15 @@ F 3 "http://www.latticesemi.com/~/media/LatticeSemi/Documents/DataSheets/iCE/iCE
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14400 10100 15150 10100
+	14400 10100 16250 10100
 Wire Wire Line
-	14400 10200 15150 10200
+	14400 10200 16250 10200
 Wire Wire Line
-	14400 10300 15150 10300
+	14400 10300 16250 10300
 Wire Wire Line
-	14400 10400 15150 10400
+	14400 10400 16250 10400
 Wire Wire Line
-	14400 8800 15150 8800
-Text Label 14550 8800 0    60   ~ 0
-ICE40_NAVD
+	14400 8800 16250 8800
 Text Label 14500 10100 0    60   ~ 0
 ICE40_NE
 Text Label 14500 10200 0    60   ~ 0
@@ -218,28 +216,308 @@ Text Label 14500 10300 0    60   ~ 0
 ICE40_NWE
 Text Label 14500 10400 0    60   ~ 0
 ICE40_NOE
-Wire Wire Line
-	14400 8000 15150 8000
-Text Label 14500 8000 0    60   ~ 0
+Text Label 14450 8000 0    60   ~ 0
 ICE40_FMCCLK
 Entry Wire Line
-	15150 10400 15250 10500
+	16250 10400 16350 10500
 Entry Wire Line
-	15150 10300 15250 10400
+	16250 10300 16350 10400
 Entry Wire Line
-	15150 10200 15250 10300
+	16250 10200 16350 10300
 Entry Wire Line
-	15150 10100 15250 10200
+	16250 10100 16350 10200
 Entry Wire Line
-	15150 8800 15250 8900
+	16250 8800 16350 8900
 Entry Wire Line
-	15150 8000 15250 8100
+	16250 8000 16350 8100
 Wire Bus Line
-	15250 8000 15500 8000
-Text HLabel 15500 8000 2    60   Input ~ 0
+	16350 8000 16600 8000
+Text HLabel 16600 8000 2    60   Input ~ 0
 Cont[5...0]
+Text Label 14450 8400 0    60   ~ 0
+ENABLE0
+Wire Wire Line
+	14400 8400 14900 8400
+Wire Wire Line
+	14400 8500 14900 8500
+Text Label 14450 8500 0    60   ~ 0
+ENABLE1
+Entry Wire Line
+	14900 8400 15000 8300
+Entry Wire Line
+	14900 8500 15000 8400
+Wire Wire Line
+	14400 8000 16250 8000
+Wire Bus Line
+	15000 8200 15100 8200
+Text HLabel 15100 8200 2    60   BiDi ~ 0
+ICE40_ENABLE[1...0]
+Wire Wire Line
+	9250 5800 8700 5800
+Wire Wire Line
+	8700 5700 9250 5700
+Text Label 8850 5700 0    60   ~ 0
+FMC_D1
+Text Label 8850 5800 0    60   ~ 0
+FMC_D0
+Wire Wire Line
+	14400 10500 14950 10500
+Wire Wire Line
+	14400 10600 14950 10600
+Text Label 14500 10500 0    60   ~ 0
+FMC_D3
+Text Label 14500 10600 0    60   ~ 0
+FMC_D2
+Wire Wire Line
+	9250 7550 8800 7550
+Text Label 8850 7550 0    60   ~ 0
+FMC_D4
+Wire Wire Line
+	9250 7450 8800 7450
+Text Label 8850 7450 0    60   ~ 0
+FMC_D5
+Wire Wire Line
+	9250 9150 8800 9150
+Text Label 8850 9150 0    60   ~ 0
+FMC_D6
+Wire Wire Line
+	9250 9050 8800 9050
+Text Label 8850 9050 0    60   ~ 0
+FMC_D7
+Wire Wire Line
+	9250 8950 8800 8950
+Text Label 8850 8950 0    60   ~ 0
+FMC_D8
+Wire Wire Line
+	9250 8850 8800 8850
+Text Label 8850 8850 0    60   ~ 0
+FMC_D9
+Wire Wire Line
+	9250 8750 8800 8750
+Text Label 8850 8750 0    60   ~ 0
+FMC_D10
+Wire Wire Line
+	9250 8650 8800 8650
+Text Label 8850 8650 0    60   ~ 0
+FMC_D11
+Wire Wire Line
+	9250 8550 8800 8550
+Text Label 8850 8550 0    60   ~ 0
+FMC_D12
+Wire Wire Line
+	9250 6500 8800 6500
+Text Label 8850 6500 0    60   ~ 0
+FMC_D13
+Wire Wire Line
+	9250 6400 8800 6400
+Text Label 8850 6400 0    60   ~ 0
+FMC_D14
+Wire Wire Line
+	9250 6300 8800 6300
+Text Label 8850 6300 0    60   ~ 0
+FMC_D15
+Wire Wire Line
+	19950 5500 19400 5500
+Wire Wire Line
+	19400 5400 19950 5400
+Text Label 19500 5400 0    60   ~ 0
+FMC_DA1
+Text Label 19500 5500 0    60   ~ 0
+FMC_DA0
+Wire Wire Line
+	19400 5200 19950 5200
+Wire Wire Line
+	19400 5300 19950 5300
+Text Label 19500 5200 0    60   ~ 0
+FMC_DA3
+Text Label 19500 5300 0    60   ~ 0
+FMC_DA2
+Text Label 19500 5100 0    60   ~ 0
+FMC_DA4
+Text Label 19500 5000 0    60   ~ 0
+FMC_DA5
+Wire Wire Line
+	19400 5100 19950 5100
+Wire Wire Line
+	19400 5000 19950 5000
+Text Label 19500 4900 0    60   ~ 0
+FMC_DA6
+Text Label 19500 4800 0    60   ~ 0
+FMC_DA7
+Text Label 19500 4700 0    60   ~ 0
+FMC_DA8
+Text Label 19500 4600 0    60   ~ 0
+FMC_DA9
+Text Label 19500 4500 0    60   ~ 0
+FMC_DA10
+Text Label 19500 4400 0    60   ~ 0
+FMC_DA11
+Text Label 19500 4300 0    60   ~ 0
+FMC_DA12
+Wire Wire Line
+	19400 4900 19950 4900
+Wire Wire Line
+	19400 4800 19950 4800
+Wire Wire Line
+	19400 4700 19950 4700
+Wire Wire Line
+	19400 4600 19950 4600
+Wire Wire Line
+	19400 4500 19950 4500
+Wire Wire Line
+	19400 4400 19950 4400
+Wire Wire Line
+	19400 4300 19950 4300
+Text Label 19500 4200 0    60   ~ 0
+FMC_DA13
+Text Label 19500 4100 0    60   ~ 0
+FMC_DA14
+Text Label 19500 4000 0    60   ~ 0
+FMC_DA15
+Wire Wire Line
+	19400 4200 19950 4200
+Wire Wire Line
+	19400 4100 19950 4100
+Wire Wire Line
+	19400 4000 19950 4000
+Entry Wire Line
+	19950 5500 20050 5400
+Entry Wire Line
+	19950 5400 20050 5300
+Entry Wire Line
+	19950 5300 20050 5200
+Entry Wire Line
+	19950 5200 20050 5100
+Entry Wire Line
+	19950 5100 20050 5000
+Entry Wire Line
+	19950 5000 20050 4900
+Entry Wire Line
+	19950 4900 20050 4800
+Entry Wire Line
+	19950 4800 20050 4700
+Entry Wire Line
+	19950 4700 20050 4600
+Entry Wire Line
+	19950 4600 20050 4500
+Entry Wire Line
+	19950 4500 20050 4400
+Entry Wire Line
+	19950 4400 20050 4300
+Entry Wire Line
+	19950 4300 20050 4200
+Entry Wire Line
+	19950 4200 20050 4100
+Entry Wire Line
+	19950 4100 20050 4000
+Entry Wire Line
+	19950 4000 20050 3900
+Wire Bus Line
+	20050 3800 20250 3800
+Text HLabel 20250 3800 2    60   BiDi ~ 0
+FMC_AD[15...0]
+Wire Wire Line
+	19400 5850 19950 5850
+Wire Wire Line
+	19400 5950 19950 5950
+Wire Wire Line
+	19400 6050 19950 6050
+Wire Wire Line
+	19400 6150 19950 6150
+Wire Wire Line
+	19400 6250 19950 6250
+Wire Wire Line
+	19400 6350 19950 6350
+Wire Wire Line
+	19400 6450 19950 6450
+Wire Wire Line
+	19400 6550 19950 6550
+Wire Wire Line
+	19400 6650 19950 6650
+Text Label 19500 5850 0    60   ~ 0
+FMC_A16
+Text Label 19500 5950 0    60   ~ 0
+FMC_A17
+Text Label 19500 6050 0    60   ~ 0
+FMC_A18
+Text Label 19500 6150 0    60   ~ 0
+FMC_A19
+Text Label 19500 6250 0    60   ~ 0
+FMC_A20
+Text Label 19500 6350 0    60   ~ 0
+FMC_A21
+Text Label 19500 6450 0    60   ~ 0
+FMC_A22
+Text Label 19500 6550 0    60   ~ 0
+FMC_A23
+Text Label 19500 6650 0    60   ~ 0
+FMC_A24
+Entry Wire Line
+	19950 6650 20050 6550
+Entry Wire Line
+	19950 6550 20050 6450
+Entry Wire Line
+	19950 6450 20050 6350
+Entry Wire Line
+	19950 6350 20050 6250
+Entry Wire Line
+	19950 6250 20050 6150
+Entry Wire Line
+	19950 6150 20050 6050
+Entry Wire Line
+	19950 6050 20050 5950
+Entry Wire Line
+	19950 5950 20050 5850
+Entry Wire Line
+	19950 5850 20050 5750
+Wire Bus Line
+	20050 5700 20250 5700
+Text HLabel 20250 5700 2    60   BiDi ~ 0
+FMC_A[24...16]
+Wire Wire Line
+	8700 6200 9250 6200
+Text Label 8800 6200 0    60   ~ 0
+FMC_A16
+Wire Wire Line
+	8700 6100 9250 6100
+Text Label 8800 6100 0    60   ~ 0
+FMC_A17
+Wire Wire Line
+	8700 6000 9250 6000
+Text Label 8800 6000 0    60   ~ 0
+FMC_A18
+Wire Wire Line
+	14400 6850 14950 6850
+Text Label 14500 6850 0    60   ~ 0
+FMC_A19
+Wire Wire Line
+	14400 6750 14950 6750
+Text Label 14500 6750 0    60   ~ 0
+FMC_A20
+Wire Wire Line
+	14400 6650 14950 6650
+Text Label 14500 6650 0    60   ~ 0
+FMC_A21
+Wire Wire Line
+	14400 6550 14950 6550
+Text Label 14500 6550 0    60   ~ 0
+FMC_A22
+Wire Wire Line
+	14400 6950 14950 6950
+Text Label 14500 6950 0    60   ~ 0
+FMC_A23
+Wire Wire Line
+	14400 9400 14950 9400
+Text Label 14500 9400 0    60   ~ 0
+FMC_A24
+Wire Bus Line
+	15000 8200 15000 8500
 Wire Bus Line
 	7800 10650 7800 11450
 Wire Bus Line
-	15250 8000 15250 10500
+	16350 8000 16350 10500
+Wire Bus Line
+	20050 5700 20050 6650
+Wire Bus Line
+	20050 3800 20050 5500
 $EndSCHEMATC
