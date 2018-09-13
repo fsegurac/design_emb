@@ -5,7 +5,7 @@ LIBS:stm32f446zetx
 LIBS:design_emb-cache
 EELAYER 26 0
 EELAYER END
-$Descr A1 33110 23386
+$Descr A2 23386 16535
 encoding utf-8
 Sheet 2 5
 Title ""
@@ -544,12 +544,8 @@ Wire Wire Line
 	6250 6450 5900 6450
 Text HLabel 5900 6450 0    60   Input ~ 0
 BOOT0
-Wire Notes Line style dash_dot
-	600  16850 19850 16850
 Wire Wire Line
 	15650 8050 16400 8050
-Text HLabel 16400 8050 2    60   Input ~ 0
-BOOT1
 Wire Wire Line
 	15650 10750 16150 10750
 Text HLabel 16150 10750 2    60   Output ~ 0
@@ -722,8 +718,6 @@ Text Notes 4350 14300 3    60   ~ 0
 OSC32= 32,768 KHz\n
 Text Notes 5900 14650 3    60   ~ 0
 OSC= 12MHz
-Wire Notes Line style dash_dot
-	19850 16850 19850 450 
 Text HLabel 6000 6850 0    60   Output ~ 0
 Vcap1
 Text HLabel 6000 6950 0    60   Output ~ 0
@@ -1107,6 +1101,103 @@ Wire Wire Line
 Connection ~ 10100 1600
 Wire Wire Line
 	10100 1600 10200 1600
+$Comp
+L device:R R?
+U 1 1 5B9CAABB
+P 19950 7750
+F 0 "R?" H 20020 7796 50  0000 L CNN
+F 1 "10K" H 20020 7705 50  0000 L CNN
+F 2 "" V 19880 7750 50  0001 C CNN
+F 3 "" H 19950 7750 50  0001 C CNN
+	1    19950 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5B9CABDE
+P 19950 8400
+F 0 "R?" H 20020 8446 50  0000 L CNN
+F 1 "10K" H 20020 8355 50  0000 L CNN
+F 2 "" V 19880 8400 50  0001 C CNN
+F 3 "" H 19950 8400 50  0001 C CNN
+	1    19950 8400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19950 7900 19950 8050
+Wire Wire Line
+	19950 8050 19500 8050
+Connection ~ 19950 8050
+Wire Wire Line
+	19950 8050 19950 8250
+Text Label 15850 8050 0    60   ~ 0
+BOOT1
+Text Label 19550 8050 0    60   ~ 0
+BOOT1
+Wire Wire Line
+	19950 7600 19950 7450
+Wire Wire Line
+	19950 8550 19950 8700
+Text HLabel 19950 7450 1    60   Input ~ 0
+VDD_3V3
+$Comp
+L power:GND #PWR?
+U 1 1 5B9EC896
+P 19950 8700
+F 0 "#PWR?" H 19950 8450 50  0001 C CNN
+F 1 "GND" H 19955 8527 50  0000 C CNN
+F 2 "" H 19950 8700 50  0001 C CNN
+F 3 "" H 19950 8700 50  0001 C CNN
+	1    19950 8700
+	1    0    0    -1  
+$EndComp
+Text HLabel 6250 6150 0    60   Input ~ 0
+NRST
+$Comp
+L device:R R?
+U 1 1 5B9FB69B
+P 18900 8300
+F 0 "R?" H 18830 8254 50  0000 R CNN
+F 1 "1K" H 18830 8345 50  0000 R CNN
+F 2 "" V 18830 8300 50  0001 C CNN
+F 3 "" H 18900 8300 50  0001 C CNN
+	1    18900 8300
+	-1   0    0    1   
+$EndComp
+$Comp
+L device:LED D?
+U 1 1 5B9FB7FB
+P 18900 8800
+F 0 "D?" V 18938 8683 50  0000 R CNN
+F 1 "LED_PRB" V 18847 8683 50  0000 R CNN
+F 2 "" H 18900 8800 50  0001 C CNN
+F 3 "" H 18900 8800 50  0001 C CNN
+	1    18900 8800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	18900 8450 18900 8650
+Wire Wire Line
+	18900 8150 18900 8000
+Wire Wire Line
+	18900 8950 18900 9100
+Wire Wire Line
+	18900 8000 18500 8000
+Text Label 18550 8000 0    60   ~ 0
+PROBE
+$Comp
+L power:GND #PWR?
+U 1 1 5BA23E12
+P 18900 9100
+F 0 "#PWR?" H 18900 8850 50  0001 C CNN
+F 1 "GND" H 18905 8927 50  0000 C CNN
+F 2 "" H 18900 9100 50  0001 C CNN
+F 3 "" H 18900 9100 50  0001 C CNN
+	1    18900 9100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15650 7950 16400 7950
 Wire Wire Line
 	15650 12350 16500 12350
 Wire Bus Line
@@ -1117,4 +1208,6 @@ Wire Bus Line
 	5600 9050 5600 11750
 Wire Bus Line
 	5550 11850 5550 12650
+Text Label 15850 7950 0    60   ~ 0
+PROBE
 $EndSCHEMATC
