@@ -1,8 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:power
-LIBS:74xx
 LIBS:stm32f446zetx
-LIBS:design_emb-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -239,8 +236,6 @@ Wire Wire Line
 	4000 3700 4250 3700
 Wire Wire Line
 	5650 3650 6000 3650
-Text HLabel 6100 3650 2    60   Output ~ 0
-+3V3_FPGA
 Wire Wire Line
 	5650 3800 5650 3950
 Wire Wire Line
@@ -424,4 +419,6 @@ Wire Wire Line
 	2750 3100 3000 3100
 Text HLabel 3000 3100 2    60   Output ~ 0
 +5V
+Text HLabel 6100 3650 2    60   Output ~ 0
++3V3_FPGA
 $EndSCHEMATC

@@ -1,8 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:power
-LIBS:74xx
 LIBS:stm32f446zetx
-LIBS:design_emb-cache
 EELAYER 26 0
 EELAYER END
 $Descr A2 23386 16535
@@ -1198,6 +1195,8 @@ F 3 "" H 18900 9100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	15650 7950 16400 7950
+Text Label 15850 7950 0    60   ~ 0
+PROBE
 Wire Wire Line
 	15650 12350 16500 12350
 Wire Bus Line
@@ -1208,6 +1207,4 @@ Wire Bus Line
 	5600 9050 5600 11750
 Wire Bus Line
 	5550 11850 5550 12650
-Text Label 15850 7950 0    60   ~ 0
-PROBE
 $EndSCHEMATC
