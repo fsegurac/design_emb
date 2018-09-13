@@ -1,5 +1,8 @@
 EESchema Schematic File Version 4
+LIBS:power
+LIBS:74xx
 LIBS:stm32f446zetx
+LIBS:design_emb-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -442,4 +445,10 @@ Wire Wire Line
 	1850 2750 2250 2750
 Text Label 1950 2750 0    60   ~ 0
 PROBE
+Text Notes 9550 4550 1    79   ~ 0
+PROBE LED
+Text Notes 9300 2100 1    79   ~ 0
+RESET BUTTON
+Text Notes 600  850  0    197  ~ 39
+ONION OMEGA-2
 $EndSCHEMATC
