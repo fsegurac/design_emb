@@ -211,13 +211,13 @@ Wire Bus Line
 Text HLabel 16600 8000 2    60   Output ~ 0
 Cont[5...0]
 Text Label 14450 8400 0    60   ~ 0
-ENABLE0
+FMC_NBL0
 Wire Wire Line
 	14400 8400 14900 8400
 Wire Wire Line
 	14400 8500 14900 8500
 Text Label 14450 8500 0    60   ~ 0
-ENABLE1
+FMC_NBL1
 Entry Wire Line
 	14900 8400 15000 8300
 Entry Wire Line
