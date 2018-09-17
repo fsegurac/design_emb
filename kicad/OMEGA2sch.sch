@@ -1,6 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:power
-LIBS:74xx
 LIBS:stm32f446zetx
 LIBS:design_emb-cache
 EELAYER 26 0
@@ -37,14 +35,6 @@ Text HLabel 5850 2550 2    60   Input ~ 0
 3V3_VDD
 Text HLabel 4650 2650 2    60   Input ~ 0
 V3.3OUT
-Text HLabel 2150 3750 0    60   BiDi ~ 0
-SPI_MISO
-Text HLabel 2150 3650 0    60   BiDi ~ 0
-SPI_MOSI
-Wire Wire Line
-	2150 3750 2250 3750
-Wire Wire Line
-	2150 3650 2250 3650
 $Comp
 L power:GND #PWR?
 U 1 1 5B916F98
@@ -69,14 +59,6 @@ F 3 "" H 4700 5100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4650 4550 4700 4550
-Text HLabel 2150 3450 0    60   BiDi ~ 0
-SPI_CS
-Wire Wire Line
-	2150 3450 2250 3450
-Text HLabel 2150 3550 0    60   BiDi ~ 0
-SPI_CLK
-Wire Wire Line
-	2150 3550 2250 3550
 Text HLabel 4650 3150 2    60   Output ~ 0
 SERIAL_TX
 Text HLabel 4650 3250 2    60   Input ~ 0
@@ -451,4 +433,38 @@ Text Notes 9300 2100 1    79   ~ 0
 RESET BUTTON
 Text Notes 600  850  0    197  ~ 39
 ONION OMEGA-2
+Wire Wire Line
+	2250 3050 1700 3050
+Text Label 1800 3050 0    60   ~ 0
+RST
+Wire Wire Line
+	1750 3450 2250 3450
+Wire Wire Line
+	1750 3550 2250 3550
+Wire Wire Line
+	1750 3650 2250 3650
+Wire Wire Line
+	1750 3750 2250 3750
+Text Label 1800 3450 0    60   ~ 0
+SPI_SS
+Text Label 1800 3550 0    60   ~ 0
+SPI_SCLK
+Text Label 1800 3650 0    60   ~ 0
+SPI_MOSI
+Text Label 1800 3750 0    60   ~ 0
+SPI_MISO
+Entry Wire Line
+	1650 3350 1750 3450
+Entry Wire Line
+	1650 3450 1750 3550
+Entry Wire Line
+	1650 3550 1750 3650
+Entry Wire Line
+	1650 3650 1750 3750
+Wire Bus Line
+	1650 3250 1500 3250
+Wire Bus Line
+	1650 3250 1650 3750
+Text HLabel 1500 3250 0    60   BiDi ~ 0
+OMEGA_SPI[3...0]
 $EndSCHEMATC

@@ -1,6 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:power
-LIBS:74xx
 LIBS:stm32f446zetx
 LIBS:design_emb-cache
 EELAYER 26 0
@@ -132,35 +130,15 @@ Text Label 15700 12150 0    60   ~ 0
 FMC_DA14
 Text Label 15700 12250 0    60   ~ 0
 FMC_DA15
-Wire Wire Line
-	15650 11550 16150 11550
-Text HLabel 16150 11550 2    60   Input ~ 0
-FMC_CLK
 Text Label 15700 11550 0    60   ~ 0
 FMC_CLK
-Wire Wire Line
-	15650 11650 16150 11650
-Text HLabel 16150 11650 2    60   Input ~ 0
-FMC_NOE
 Text Label 15700 11650 0    60   ~ 0
 FMC_NOE
-Wire Wire Line
-	15650 11750 16150 11750
-Text HLabel 16150 11750 2    60   Input ~ 0
-FMC_NWE
 Text Label 15700 11750 0    60   ~ 0
 FMC_NWE
-Wire Wire Line
-	15650 11850 16150 11850
-Text HLabel 16150 11850 2    60   Input ~ 0
-FMC_WAIT
 Text Label 15700 11850 0    60   ~ 0
 FMC_NWAIT
-Wire Wire Line
-	15650 11950 16150 11950
 Text Label 15700 11950 0    60   ~ 0
-FMC_NE1
-Text HLabel 16150 11950 2    60   Input ~ 0
 FMC_NE1
 Wire Wire Line
 	6250 11850 5700 11850
@@ -1202,18 +1180,44 @@ Text Label 15850 7950 0    60   ~ 0
 PROBE
 Text Notes 700  1050 0    197  ~ 39
 STM32F446ZETx
+Text Notes 20850 7750 3    79   ~ 0
+BOOT SELECT
+Text Notes 18650 8900 1    79   ~ 0
+PROBE LED
+Wire Wire Line
+	15650 11550 17250 11550
+Wire Wire Line
+	15650 11650 17250 11650
+Wire Wire Line
+	15650 11750 17250 11750
+Wire Wire Line
+	15650 11850 17250 11850
+Wire Wire Line
+	15650 11950 17250 11950
+Entry Wire Line
+	17250 11550 17350 11650
+Entry Wire Line
+	17250 11650 17350 11750
+Entry Wire Line
+	17250 11750 17350 11850
+Entry Wire Line
+	17250 11850 17350 11950
+Entry Wire Line
+	17250 11950 17350 12050
+Wire Bus Line
+	17350 11450 17550 11450
+Text HLabel 17550 11450 2    60   Input ~ 0
+Cont[5...0]
+Wire Bus Line
+	16600 12450 16600 12650
 Wire Wire Line
 	15650 12350 16500 12350
 Wire Bus Line
-	16600 12450 16600 12650
+	17350 11450 17350 12050
 Wire Bus Line
 	16400 11350 16400 12850
 Wire Bus Line
 	5600 9050 5600 11750
 Wire Bus Line
 	5550 11850 5550 12650
-Text Notes 20850 7750 3    79   ~ 0
-BOOT SELECT
-Text Notes 18650 8900 1    79   ~ 0
-PROBE LED
 $EndSCHEMATC

@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:stm32f446zetx
+LIBS:design_emb-cache
 EELAYER 26 0
 EELAYER END
 $Descr A2 23386 16535
@@ -40,39 +41,25 @@ Wire Wire Line
 Text Notes 11600 2450 0    60   ~ 0
 VCC Max: 1.4 V
 Text Label 8350 11050 0    60   ~ 0
-ICE40_MISO
+SPI_MISO
 Text Label 8350 11150 0    60   ~ 0
-ICE40_MOSI
+SPI_MOSI
 Text Label 8350 11250 0    60   ~ 0
-ICE40_SCLK
+SPI_SCLK
 Text Label 8350 11350 0    60   ~ 0
-ICE40_SS
+SPI_SS
 Text Label 8350 10850 0    60   ~ 0
 ICE40_RESETB
 Wire Wire Line
-	7900 10850 9250 10850
+	8250 10850 9250 10850
 Wire Wire Line
-	7900 11050 9250 11050
+	7700 11050 9250 11050
 Wire Wire Line
-	7900 11150 9250 11150
+	7700 11150 9250 11150
 Wire Wire Line
-	7900 11250 9250 11250
+	7700 11250 9250 11250
 Wire Wire Line
-	7900 11350 9250 11350
-Wire Bus Line
-	7800 10650 7700 10650
-Entry Wire Line
-	7800 10950 7900 10850
-Entry Wire Line
-	7800 11150 7900 11050
-Entry Wire Line
-	7800 11250 7900 11150
-Entry Wire Line
-	7800 11350 7900 11250
-Entry Wire Line
-	7800 11450 7900 11350
-Text HLabel 7700 10650 0    60   BiDi ~ 0
-ICE40_SPI[4...0]
+	7700 11350 9250 11350
 Wire Wire Line
 	11500 11800 11500 12000
 Wire Wire Line
@@ -198,15 +185,15 @@ Wire Wire Line
 Wire Wire Line
 	14400 8800 16250 8800
 Text Label 14500 10100 0    60   ~ 0
-ICE40_NE
+FMC_NE1
 Text Label 14500 10200 0    60   ~ 0
-ICE40_NWAIT
+FMC_NWAIT
 Text Label 14500 10300 0    60   ~ 0
-ICE40_NWE
+FMC_NWE
 Text Label 14500 10400 0    60   ~ 0
-ICE40_NOE
+FMC_NOE
 Text Label 14450 8000 0    60   ~ 0
-ICE40_FMCCLK
+FMC_CLK
 Entry Wire Line
 	16250 10400 16350 10500
 Entry Wire Line
@@ -221,7 +208,7 @@ Entry Wire Line
 	16250 8000 16350 8100
 Wire Bus Line
 	16350 8000 16600 8000
-Text HLabel 16600 8000 2    60   Input ~ 0
+Text HLabel 16600 8000 2    60   Output ~ 0
 Cont[5...0]
 Text Label 14450 8400 0    60   ~ 0
 ENABLE0
@@ -786,10 +773,24 @@ Wire Wire Line
 Connection ~ 14600 2950
 Wire Wire Line
 	14600 2950 14850 2950
+Text HLabel 7500 10650 0    60   BiDi ~ 0
+ICE40_SPI[3...0]
+Entry Wire Line
+	7600 11450 7700 11350
+Entry Wire Line
+	7600 11350 7700 11250
+Entry Wire Line
+	7600 11250 7700 11150
+Entry Wire Line
+	7600 11150 7700 11050
+Wire Bus Line
+	7600 10650 7500 10650
+Text HLabel 8250 10850 0    60   BiDi ~ 0
+RESET_B
 Wire Bus Line
 	15000 8200 15000 8500
 Wire Bus Line
-	7800 10650 7800 11450
+	7600 10650 7600 11450
 Wire Bus Line
 	16350 8000 16350 10500
 Wire Bus Line
