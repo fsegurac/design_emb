@@ -1,6 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:power
-LIBS:74xx
 LIBS:stm32f446zetx
 LIBS:design_emb-cache
 EELAYER 26 0
@@ -597,14 +595,14 @@ Text HLabel 9000 10250 0    60   Input ~ 0
 +3V3_FPGA
 Text HLabel 9000 10150 0    60   Input ~ 0
 +3V3_FPGA
-Text HLabel 8900 6850 0    60   Input ~ 0
+Text HLabel 8900 6900 0    60   Input ~ 0
 +3V3_FPGA
-Text HLabel 8900 6950 0    60   Input ~ 0
+Text HLabel 8900 7000 0    60   Input ~ 0
 +3V3_FPGA
 Wire Wire Line
-	8900 6850 9250 6850
+	8900 6900 9250 6900
 Wire Wire Line
-	8900 6950 9250 6950
+	8900 7000 9250 7000
 Wire Wire Line
 	9250 10400 9000 10400
 Wire Wire Line
@@ -813,11 +811,11 @@ Connection ~ 12000 3000
 Wire Wire Line
 	12000 3000 12000 2650
 Wire Wire Line
-	12550 2650 13100 2650
+	12550 2650 12850 2650
 Connection ~ 12550 2650
 Connection ~ 13100 2650
 Wire Wire Line
-	12550 2950 13100 2950
+	12550 2950 12850 2950
 Connection ~ 13100 2950
 $Comp
 L device:R R5
@@ -894,6 +892,155 @@ Wire Wire Line
 	17700 2950 18350 2950
 Wire Wire Line
 	9250 10850 8350 10850
+Text Label 8600 10850 0    60   ~ 0
+CRESET_B
+$Comp
+L device:CP1 C?
+U 1 1 5BADC284
+P 12850 2800
+F 0 "C?" H 12850 2900 50  0000 L CNN
+F 1 "100nF" H 12965 2755 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand" H 12888 2650 50  0001 C CNN
+F 3 "" H 12850 2800 50  0001 C CNN
+	1    12850 2800
+	1    0    0    -1  
+$EndComp
+Connection ~ 12850 2650
+Wire Wire Line
+	12850 2650 13100 2650
+Connection ~ 12850 2950
+Wire Wire Line
+	12850 2950 13100 2950
+Wire Wire Line
+	9250 4200 8700 4200
+Wire Wire Line
+	9250 4300 8700 4300
+Wire Wire Line
+	9250 4400 8700 4400
+Wire Wire Line
+	9250 4500 8700 4500
+Wire Wire Line
+	9250 4600 8700 4600
+Wire Wire Line
+	9250 4700 8700 4700
+Wire Wire Line
+	9250 4800 8700 4800
+Wire Wire Line
+	9250 4900 8700 4900
+Wire Wire Line
+	9250 5000 8700 5000
+Wire Wire Line
+	9250 5100 8700 5100
+Text Label 8800 4200 0    60   ~ 0
+GPIO0
+Text Label 8800 4300 0    60   ~ 0
+GPIO1
+Text Label 8800 4400 0    60   ~ 0
+GPIO2
+Text Label 8800 4500 0    60   ~ 0
+GPIO3
+Text Label 8800 4600 0    60   ~ 0
+GPIO4
+Text Label 8800 4700 0    60   ~ 0
+GPIO5
+Text Label 8800 4800 0    60   ~ 0
+GPIO6
+Text Label 8800 4900 0    60   ~ 0
+GPIO7
+Text Label 8800 5000 0    60   ~ 0
+GPIO8
+Text Label 8800 5100 0    60   ~ 0
+GPIO9
+$Comp
+L conn:Conn_01x10 J?
+U 1 1 5BB3EB2A
+P 8500 4600
+F 0 "J?" H 8420 5217 50  0000 C CNN
+F 1 "Conn_01x10" H 8420 5126 50  0000 C CNN
+F 2 "" H 8500 4600 50  0001 C CNN
+F 3 "~" H 8500 4600 50  0001 C CNN
+	1    8500 4600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	14400 4250 15150 4250
+Wire Wire Line
+	14400 4350 15150 4350
+Wire Wire Line
+	14400 4450 15150 4450
+Wire Wire Line
+	14400 4550 15150 4550
+Wire Wire Line
+	14400 4750 14450 4750
+Wire Wire Line
+	14450 4750 14450 4650
+Wire Wire Line
+	14450 4650 15150 4650
+Wire Wire Line
+	14400 4850 14500 4850
+Wire Wire Line
+	14500 4850 14500 4750
+Wire Wire Line
+	14500 4750 15150 4750
+Wire Wire Line
+	14400 4950 14550 4950
+Wire Wire Line
+	14550 4950 14550 4850
+Wire Wire Line
+	14550 4850 15150 4850
+Wire Wire Line
+	14400 5050 14600 5050
+Wire Wire Line
+	14600 5050 14600 4950
+Wire Wire Line
+	14600 4950 15150 4950
+Wire Wire Line
+	14400 5550 14650 5550
+Wire Wire Line
+	14650 5550 14650 5050
+Wire Wire Line
+	14650 5050 15150 5050
+Wire Wire Line
+	14400 5650 14700 5650
+Wire Wire Line
+	14700 5650 14700 5150
+Wire Wire Line
+	14700 5150 15150 5150
+$Comp
+L conn:Conn_01x10 J?
+U 1 1 5BBC8CFA
+P 15350 4650
+F 0 "J?" H 15430 4642 50  0000 L CNN
+F 1 "Conn_01x10" H 15430 4551 50  0000 L CNN
+F 2 "" H 15350 4650 50  0001 C CNN
+F 3 "~" H 15350 4650 50  0001 C CNN
+	1    15350 4650
+	1    0    0    -1  
+$EndComp
+Text Label 14700 4250 0    60   ~ 0
+GPIO10
+Text Label 14700 4350 0    60   ~ 0
+GPIO11
+Text Label 14700 4450 0    60   ~ 0
+GPIO12
+Text Label 14700 4550 0    60   ~ 0
+GPIO13
+Text Label 14700 4650 0    60   ~ 0
+GPIO14
+Text Label 14700 4750 0    60   ~ 0
+GPIO15
+Text Label 14700 4850 0    60   ~ 0
+GPIO16
+Text Label 14700 4950 0    60   ~ 0
+GPIO17
+Text Label 14700 5050 0    60   ~ 0
+GPIO18
+Text Label 14750 5150 0    60   ~ 0
+GPIO19
+Text HLabel 9100 11550 0    60   Input ~ 0
++3V3_FPGA
+Wire Wire Line
+	9100 11550 9250 11550
 Wire Bus Line
 	15000 8200 15000 8500
 Wire Bus Line
@@ -904,6 +1051,4 @@ Wire Bus Line
 	20050 5700 20050 6650
 Wire Bus Line
 	20050 3800 20050 5500
-Text Label 8600 10850 0    60   ~ 0
-CRESET_B
 $EndSCHEMATC
