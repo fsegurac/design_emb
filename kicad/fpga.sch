@@ -912,56 +912,45 @@ Connection ~ 12850 2950
 Wire Wire Line
 	12850 2950 13100 2950
 Wire Wire Line
-	9250 4200 8700 4200
+	9250 4200 8400 4200
 Wire Wire Line
-	9250 4300 8700 4300
+	9250 4300 8400 4300
 Wire Wire Line
-	9250 4400 8700 4400
+	9250 4400 8400 4400
 Wire Wire Line
-	9250 4500 8700 4500
+	9250 4500 8400 4500
 Wire Wire Line
-	9250 4600 8700 4600
+	9250 4600 8400 4600
 Wire Wire Line
-	9250 4700 8700 4700
+	9250 4700 8400 4700
 Wire Wire Line
-	9250 4800 8700 4800
+	9250 4800 8400 4800
 Wire Wire Line
-	9250 4900 8700 4900
+	9250 4900 8400 4900
 Wire Wire Line
-	9250 5000 8700 5000
+	9250 5000 8400 5000
 Wire Wire Line
-	9250 5100 8700 5100
-Text Label 8800 4200 0    60   ~ 0
+	9250 5100 8400 5100
+Text Label 8500 4200 0    60   ~ 0
 GPIO0
-Text Label 8800 4300 0    60   ~ 0
+Text Label 8500 4300 0    60   ~ 0
 GPIO1
-Text Label 8800 4400 0    60   ~ 0
+Text Label 8500 4400 0    60   ~ 0
 GPIO2
-Text Label 8800 4500 0    60   ~ 0
+Text Label 8500 4500 0    60   ~ 0
 GPIO3
-Text Label 8800 4600 0    60   ~ 0
+Text Label 8500 4600 0    60   ~ 0
 GPIO4
-Text Label 8800 4700 0    60   ~ 0
+Text Label 8500 4700 0    60   ~ 0
 GPIO5
-Text Label 8800 4800 0    60   ~ 0
+Text Label 8500 4800 0    60   ~ 0
 GPIO6
-Text Label 8800 4900 0    60   ~ 0
+Text Label 8500 4900 0    60   ~ 0
 GPIO7
-Text Label 8800 5000 0    60   ~ 0
+Text Label 8500 5000 0    60   ~ 0
 GPIO8
-Text Label 8800 5100 0    60   ~ 0
+Text Label 8500 5100 0    60   ~ 0
 GPIO9
-$Comp
-L conn:Conn_01x10 J?
-U 1 1 5BB3EB2A
-P 8500 4600
-F 0 "J?" H 8420 5217 50  0000 C CNN
-F 1 "Conn_01x10" H 8420 5126 50  0000 C CNN
-F 2 "" H 8500 4600 50  0001 C CNN
-F 3 "~" H 8500 4600 50  0001 C CNN
-	1    8500 4600
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	14400 4250 15150 4250
 Wire Wire Line
@@ -1006,17 +995,6 @@ Wire Wire Line
 	14700 5650 14700 5150
 Wire Wire Line
 	14700 5150 15150 5150
-$Comp
-L conn:Conn_01x10 J?
-U 1 1 5BBC8CFA
-P 15350 4650
-F 0 "J?" H 15430 4642 50  0000 L CNN
-F 1 "Conn_01x10" H 15430 4551 50  0000 L CNN
-F 2 "" H 15350 4650 50  0001 C CNN
-F 3 "~" H 15350 4650 50  0001 C CNN
-	1    15350 4650
-	1    0    0    -1  
-$EndComp
 Text Label 14700 4250 0    60   ~ 0
 GPIO10
 Text Label 14700 4350 0    60   ~ 0
@@ -1041,6 +1019,102 @@ Text HLabel 9100 11550 0    60   Input ~ 0
 +3V3_FPGA
 Wire Wire Line
 	9100 11550 9250 11550
+$Comp
+L conn:Conn_02x11_Counter_Clockwise J?
+U 1 1 5BC29906
+P 8100 4600
+F 0 "J?" H 8150 5317 50  0000 C CNN
+F 1 "Conn_02x11_Counter_Clockwise" H 8150 5226 50  0000 C CNN
+F 2 "" H 8100 4600 50  0001 C CNN
+F 3 "~" H 8100 4600 50  0001 C CNN
+	1    8100 4600
+	1    0    0    -1  
+$EndComp
+Text HLabel 8850 4100 2    60   Input ~ 0
++3V3_FPGA
+Wire Wire Line
+	8400 4100 8850 4100
+Wire Wire Line
+	7150 4200 7900 4200
+Wire Wire Line
+	7150 4300 7900 4300
+Wire Wire Line
+	7150 4400 7900 4400
+Wire Wire Line
+	7150 4500 7900 4500
+Wire Wire Line
+	7150 4700 7200 4700
+Wire Wire Line
+	7200 4700 7200 4600
+Wire Wire Line
+	7200 4600 7900 4600
+Wire Wire Line
+	7150 4800 7250 4800
+Wire Wire Line
+	7250 4800 7250 4700
+Wire Wire Line
+	7250 4700 7900 4700
+Wire Wire Line
+	7150 4900 7300 4900
+Wire Wire Line
+	7300 4900 7300 4800
+Wire Wire Line
+	7300 4800 7900 4800
+Wire Wire Line
+	7150 5000 7350 5000
+Wire Wire Line
+	7350 5000 7350 4900
+Wire Wire Line
+	7350 4900 7900 4900
+Wire Wire Line
+	7150 5500 7400 5500
+Wire Wire Line
+	7400 5500 7400 5000
+Wire Wire Line
+	7400 5000 7900 5000
+Wire Wire Line
+	7150 5600 7450 5600
+Wire Wire Line
+	7450 5600 7450 5100
+Wire Wire Line
+	7450 5100 7900 5100
+Text Label 7450 4200 0    60   ~ 0
+GPIO10
+Text Label 7450 4300 0    60   ~ 0
+GPIO11
+Text Label 7450 4400 0    60   ~ 0
+GPIO12
+Text Label 7450 4500 0    60   ~ 0
+GPIO13
+Text Label 7450 4600 0    60   ~ 0
+GPIO14
+Text Label 7450 4700 0    60   ~ 0
+GPIO15
+Text Label 7450 4800 0    60   ~ 0
+GPIO16
+Text Label 7450 4900 0    60   ~ 0
+GPIO17
+Text Label 7450 5000 0    60   ~ 0
+GPIO18
+Text Label 7500 5100 0    60   ~ 0
+GPIO19
+Wire Wire Line
+	7900 4100 7450 4100
+Wire Wire Line
+	7450 4100 7450 3850
+Wire Wire Line
+	7450 3850 7400 3850
+$Comp
+L power:GND #PWR?
+U 1 1 5BCDECEA
+P 7400 3850
+F 0 "#PWR?" H 7400 3600 50  0001 C CNN
+F 1 "GND" H 7405 3677 50  0000 C CNN
+F 2 "" H 7400 3850 50  0001 C CNN
+F 3 "" H 7400 3850 50  0001 C CNN
+	1    7400 3850
+	0    1    1    0   
+$EndComp
 Wire Bus Line
 	15000 8200 15000 8500
 Wire Bus Line
