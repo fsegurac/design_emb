@@ -1,6 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:power
-LIBS:74xx
 LIBS:stm32f446zetx
 LIBS:design_emb-cache
 EELAYER 26 0
@@ -61,10 +59,6 @@ F 3 "" H 4700 5100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4650 4550 4700 4550
-Text HLabel 4650 3150 2    60   Output ~ 0
-SERIAL_TX
-Text HLabel 4650 3250 2    60   Input ~ 0
-SERIAL_RX
 Text HLabel 4650 3450 2    60   Input ~ 0
 UART_RX
 Text HLabel 4650 3350 2    60   Output ~ 0
@@ -493,10 +487,6 @@ Entry Wire Line
 	1750 4150 1850 4250
 Wire Bus Line
 	1750 2900 1450 2900
-Wire Bus Line
-	1650 3250 1650 3750
-Wire Bus Line
-	1750 2900 1750 4150
 Text HLabel 1450 2900 0    60   BiDi ~ 0
 JTAG[5...0]
 Text Label 2000 3150 0    60   ~ 0
@@ -513,4 +503,12 @@ Text Label 2000 4250 0    60   ~ 0
 JNRST
 Text HLabel 2250 2950 0    60   Output ~ 0
 BOOT0
+Text HLabel 4650 3250 2    60   Input ~ 0
+SERIAL_RX
+Wire Bus Line
+	1750 2900 1750 4150
+Wire Bus Line
+	1650 3250 1650 3750
+Text HLabel 4650 3150 2    60   Output ~ 0
+SERIAL_TX
 $EndSCHEMATC
