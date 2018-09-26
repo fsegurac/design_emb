@@ -503,36 +503,12 @@ Text Label 2000 4250 0    60   ~ 0
 JNRST
 Text HLabel 2250 2950 0    60   Output ~ 0
 BOOT0
-$Comp
-L conn:Conn_01x03 J?
-U 1 1 5BAE7762
-P 5400 3250
-F 0 "J?" H 5480 3292 50  0000 L CNN
-F 1 "Conn_01x03" H 5480 3201 50  0000 L CNN
-F 2 "" H 5400 3250 50  0001 C CNN
-F 3 "~" H 5400 3250 50  0001 C CNN
-	1    5400 3250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4650 3150 5200 3150
-Wire Wire Line
-	4650 3250 5200 3250
-$Comp
-L power:GND #PWR?
-U 1 1 5BAEBC38
-P 5200 3450
-F 0 "#PWR?" H 5200 3200 50  0001 C CNN
-F 1 "GND" H 5450 3400 50  0000 R CNN
-F 2 "" H 5200 3450 50  0001 C CNN
-F 3 "" H 5200 3450 50  0001 C CNN
-	1    5200 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 3350 5200 3450
-Wire Bus Line
-	1650 3250 1650 3750
+Text HLabel 4650 3250 2    60   Input ~ 0
+SERIAL_RX
 Wire Bus Line
 	1750 2900 1750 4150
+Wire Bus Line
+	1650 3250 1650 3750
+Text HLabel 4650 3150 2    60   Output ~ 0
+SERIAL_TX
 $EndSCHEMATC
