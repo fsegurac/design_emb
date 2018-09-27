@@ -7,7 +7,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -272,17 +272,6 @@ Wire Wire Line
 Connection ~ 6000 3650
 Wire Wire Line
 	6000 3650 6100 3650
-$Comp
-L power:VDDA #PWR017
-U 1 1 5B994C9C
-P 2100 3100
-F 0 "#PWR017" H 2100 2950 50  0001 C CNN
-F 1 "VDDA" H 2117 3273 50  0000 C CNN
-F 2 "" H 2100 3100 50  0001 C CNN
-F 3 "" H 2100 3100 50  0001 C CNN
-	1    2100 3100
-	1    0    0    -1  
-$EndComp
 Text Notes 1900 2900 0    60   ~ 0
 +5VDC\n
 $Comp
@@ -405,10 +394,6 @@ Text HLabel 3950 1750 0    60   Input ~ 0
 +5V
 Text HLabel 4000 3700 0    60   Input ~ 0
 +5V
-Wire Wire Line
-	2100 3100 2350 3100
-Wire Wire Line
-	2750 3100 3000 3100
 Text HLabel 3000 3100 2    60   Output ~ 0
 +5V
 Text HLabel 6100 3650 2    60   Output ~ 0
@@ -427,9 +412,6 @@ F 3 "~" H 1550 3160 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1800 3100 2100 3100
-Connection ~ 2100 3100
-Wire Wire Line
 	1800 3200 1800 3300
 Connection ~ 1800 3300
 Wire Wire Line
@@ -445,15 +427,20 @@ F 3 "" H 1800 3400 50  0001 C CNN
 	1    1800 3400
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1800 3100 2300 3100
 $Comp
-L Switch:SW_SPST SW2
-U 1 1 5B9996CB
-P 2550 3100
-F 0 "SW2" H 2550 3335 50  0000 C CNN
-F 1 "SW_SPST" H 2550 3244 50  0000 C CNN
-F 2 "" H 2550 3100 50  0001 C CNN
-F 3 "" H 2550 3100 50  0001 C CNN
-	1    2550 3100
+L power:+5VA #PWR?
+U 1 1 5BACD7AE
+P 2300 3100
+F 0 "#PWR?" H 2300 2950 50  0001 C CNN
+F 1 "+5VA" H 2315 3273 50  0000 C CNN
+F 2 "" H 2300 3100 50  0001 C CNN
+F 3 "" H 2300 3100 50  0001 C CNN
+	1    2300 3100
 	1    0    0    -1  
 $EndComp
+Connection ~ 2300 3100
+Wire Wire Line
+	2300 3100 3000 3100
 $EndSCHEMATC

@@ -1,11 +1,13 @@
 EESchema Schematic File Version 4
+LIBS:power
+LIBS:74xx
 LIBS:stm32f446zetx
 LIBS:design_emb-cache
 EELAYER 26 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 3 5
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -804,10 +806,7 @@ F 3 "" H 12550 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12000 3050 12000 3000
-Wire Wire Line
 	12000 2650 12550 2650
-Connection ~ 12000 3000
 Wire Wire Line
 	12000 3000 12000 2650
 Wire Wire Line

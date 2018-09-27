@@ -7,7 +7,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 2 5
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -1299,6 +1299,10 @@ Wire Wire Line
 Wire Wire Line
 	20600 7800 20500 7800
 Wire Wire Line
+	6250 7850 5800 7850
+Wire Wire Line
+	6250 7950 5800 7950
+Wire Wire Line
 	15650 12350 16500 12350
 Wire Bus Line
 	16600 12450 16600 12650
@@ -1312,4 +1316,8 @@ Wire Bus Line
 	18200 5700 18200 6550
 Wire Bus Line
 	5550 11850 5550 12650
+Text HLabel 5800 7850 0    61   Input ~ 0
+OUT_REL1
+Text HLabel 5800 7950 0    61   Input ~ 0
+OUT_REL2
 $EndSCHEMATC
