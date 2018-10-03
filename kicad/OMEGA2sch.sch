@@ -475,21 +475,7 @@ Wire Wire Line
 	2250 4050 1850 4050
 Wire Wire Line
 	2250 4150 1850 4150
-Entry Wire Line
-	1750 3050 1850 3150
-Entry Wire Line
-	1750 3150 1850 3250
-Entry Wire Line
-	1750 3850 1850 3950
-Entry Wire Line
-	1750 3950 1850 4050
-Entry Wire Line
-	1750 4050 1850 4150
-Entry Wire Line
-	1750 4150 1850 4250
-Wire Bus Line
-	1750 2900 1450 2900
-Text HLabel 1450 2900 0    60   BiDi ~ 0
+Text HLabel 1850 5450 0    60   BiDi ~ 0
 JTAG[5...0]
 Text Label 2000 3150 0    60   ~ 0
 JTCK
@@ -509,8 +495,58 @@ Text HLabel 4650 3250 2    60   Input ~ 0
 SERIAL_RX
 Text HLabel 4650 3150 2    60   Output ~ 0
 SERIAL_TX
+Text Label 2800 5550 0    60   ~ 0
+JTCK
+Text Label 2800 5650 0    60   ~ 0
+JTMS
+Text Label 2800 5750 0    60   ~ 0
+JTDI
+Text Label 2800 5850 0    60   ~ 0
+JTDO
+Text Label 2800 5950 0    60   ~ 0
+JTRST
+Text Label 2800 6050 0    60   ~ 0
+JNRST
+Wire Wire Line
+	2250 5650 3050 5650
+Wire Wire Line
+	2250 5750 3050 5750
+Wire Wire Line
+	2250 6050 3050 6050
+Wire Wire Line
+	2250 5850 3050 5850
+Wire Wire Line
+	2250 5950 3050 5950
+Wire Wire Line
+	2250 5550 3050 5550
+Text Label 2350 5550 0    60   ~ 0
+JTAG0
+Text Label 2350 5650 0    60   ~ 0
+JTAG1
+Text Label 2350 5750 0    60   ~ 0
+JTAG2
+Text Label 2350 5850 0    60   ~ 0
+JTAG3
+Text Label 2350 5950 0    60   ~ 0
+JTAG4
+Text Label 2350 6050 0    60   ~ 0
+JTAG5
+Entry Wire Line
+	2150 5450 2250 5550
+Entry Wire Line
+	2150 5550 2250 5650
+Entry Wire Line
+	2150 5650 2250 5750
+Entry Wire Line
+	2150 5750 2250 5850
+Entry Wire Line
+	2150 5850 2250 5950
+Entry Wire Line
+	2150 5950 2250 6050
 Wire Bus Line
-	1650 3250 1650 3750
+	2150 5450 1850 5450
 Wire Bus Line
-	1750 2900 1750 4150
+	1650 3250 1650 3650
+Wire Bus Line
+	2150 5450 2150 5950
 $EndSCHEMATC
