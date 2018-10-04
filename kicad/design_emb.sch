@@ -1,6 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:power
-LIBS:74xx
 LIBS:stm32f446zetx
 LIBS:design_emb-cache
 EELAYER 26 0

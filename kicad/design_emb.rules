@@ -1,0 +1,109 @@
+
+(rules PCB design_emb
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 1)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.6)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    VDD GND "/Sheet1/OSC32_IN" "/Sheet1/OSC32_OUT" "/Sheet1/OSC_IN" "/Sheet1/OSC_OUT" /Sheet1/VCAP1 /Sheet1/VCAP2
+    "/Sheet4/+1V2_FPGA" "/Sheet4/+3V3_FPGA" "/sheet3/CRESET_B" /Sheet4/+5V "Net-(C46-Pad1)" "Net-(C47-Pad1)" /Sheet2/RESET "Net-(D1-Pad2)"
+    "Net-(D2-Pad2)" "Net-(D4-Pad1)" "Net-(D6-Pad2)" "Net-(D7-Pad1)" "/Sheet5/IN_REL1" "/Sheet5/IN_REL2" "Net-(D8-Pad1)" "Net-(D9-Pad1)"
+    +5VA "Net-(D10-Pad1)" "Net-(D11-Pad2)" "Net-(D12-Pad2)" "/TX_IN" "/RX_OUT" "Net-(J3-Pad5)" "Net-(J3-Pad2)"
+    "Net-(J3-Pad3)" "Net-(J4-Pad3)" /Sheet1/BOOT1 "Net-(J4-Pad1)" /sheet3/GPIO0 /sheet3/GPIO1 /sheet3/GPIO2 /sheet3/GPIO3
+    /sheet3/GPIO4 /sheet3/GPIO5 /sheet3/GPIO6 /sheet3/GPIO7 /sheet3/GPIO8 /sheet3/GPIO9 /sheet3/GPIO19 /sheet3/GPIO18
+    /sheet3/GPIO17 /sheet3/GPIO16 /sheet3/GPIO15 /sheet3/GPIO14 /sheet3/GPIO13 /sheet3/GPIO12 /sheet3/GPIO11 /sheet3/GPIO10
+    /Sheet1/USR18 /Sheet1/USR17 /Sheet1/USR16 /Sheet1/USR15 /Sheet1/USR14 /Sheet1/USR13 /Sheet1/USR12 /Sheet1/USR11
+    /Sheet1/USR10 /Sheet1/USR9 /Sheet1/USR8 /Sheet1/USR7 /Sheet1/USR6 /Sheet1/USR5 /Sheet1/USR4 /Sheet1/USR3
+    /Sheet1/USR2 /Sheet1/USR1 "Net-(J7-Pad1)" "Net-(J7-Pad2)" "Net-(J8-Pad2)" "Net-(J8-Pad1)" /Sheet1/VDDUSB /Sheet1/VDDA
+    /Sheet2/USB+ "/Sheet2/USB-" /Sheet1/PROBE "Net-(R4-Pad1)" /Sheet2/PROBE "/SERIAL_RX" "Net-(U1-Pad4)" "Net-(U2-Pad4)"
+    "/SERIAL_TX" /Sheet1/FMCNBL1 /Sheet1/FMCNBL0 "Net-(U3-Pad140)" "Net-(U3-Pad139)" /Sheet1/BOOT0 /Sheet1/CTRL0 "Net-(U3-Pad136)"
+    "Net-(U3-Pad135)" /Sheet1/JTAG4 /Sheet1/JTAG3 "Net-(U3-Pad132)" "Net-(U3-Pad129)" "Net-(U3-Pad127)" "Net-(U3-Pad126)" "Net-(U3-Pad125)"
+    "Net-(U3-Pad124)" /Sheet1/CTRL5 /Sheet1/CTRL4 /Sheet1/CTRL3 /Sheet1/CTRL2 /Sheet1/CTRL1 "Net-(U3-Pad116)" /Sheet1/FMCAD3
+    /Sheet1/FMCAD2 /Sheet1/JTAG2 /Sheet1/JTAG0 /Sheet1/JTAG1 "Net-(U3-Pad104)" "Net-(U3-Pad103)" "Net-(U3-Pad102)" "Net-(U3-Pad101)"
+    "Net-(U3-Pad100)" "Net-(U3-Pad99)" "Net-(U3-Pad98)" "Net-(U3-Pad97)" "Net-(U3-Pad96)" "Net-(U3-Pad93)" "Net-(U3-Pad92)" "Net-(U3-Pad91)"
+    "Net-(U3-Pad90)" "Net-(U3-Pad89)" "Net-(U3-Pad88)" "Net-(U3-Pad87)" /Sheet1/FMCAD1 /Sheet1/FMCAD0 /Sheet1/FMCA18 /Sheet1/FMCA17
+    /Sheet1/FMCA16 /Sheet1/FMCAD15 /Sheet1/FMCAD14 /Sheet1/FMCAD13 /Sheet1/FMCAD12 /Sheet1/FMCAD11 /Sheet1/FMCAD10 /Sheet1/FMCAD9
+    /Sheet1/FMCAD8 /Sheet1/FMCAD7 /Sheet1/FMCAD6 /Sheet1/FMCAD5 /Sheet1/FMCAD4 "Net-(U3-Pad55)" "Net-(U3-Pad54)" "Net-(U3-Pad53)"
+    "Net-(U3-Pad50)" "Net-(U3-Pad49)" "Net-(U3-Pad45)" "Net-(U3-Pad26)" /Sheet2/JNRST "Net-(U3-Pad22)" "Net-(U3-Pad21)" "Net-(U3-Pad20)"
+    "Net-(U3-Pad19)" "Net-(U3-Pad18)" "Net-(U3-Pad15)" "Net-(U3-Pad14)" "Net-(U3-Pad13)" "Net-(U3-Pad12)" "Net-(U3-Pad11)" "Net-(U3-Pad10)"
+    "Net-(U3-Pad7)" "Net-(U3-Pad6)" "Net-(U4-Pad15)" "Net-(U4-Pad16)" "Net-(U4-Pad17)" "Net-(U4-Pad18)" "Net-(U4-Pad19)" "Net-(U4-Pad20)"
+    "Net-(U4-Pad21)" "Net-(U4-Pad24)" "Net-(U4-Pad33)" "Net-(U4-Pad34)" "Net-(U4-Pad37)" "Net-(U4-Pad38)" "Net-(U4-Pad39)" "Net-(U4-Pad40)"
+    "Net-(U4-Pad52)" "Net-(U4-Pad53)" "Net-(U4-Pad54)" "Net-(U4-Pad55)" "Net-(U4-Pad56)" "Net-(U4-Pad58)" "Net-(U4-Pad60)" "Net-(U4-Pad61)"
+    "Net-(U4-Pad62)" "Net-(U4-Pad63)" "Net-(U4-Pad64)" "Net-(U4-Pad77)" "Net-(U4-Pad82)" "Net-(U4-Pad83)" "Net-(U4-Pad84)" "Net-(U4-Pad85)"
+    "Net-(U4-Pad90)" "Net-(U4-Pad91)" "Net-(U4-Pad93)" "Net-(U4-Pad94)" "Net-(U4-Pad95)" "Net-(U4-Pad96)" "Net-(U4-Pad97)" "Net-(U4-Pad98)"
+    "Net-(U4-Pad99)" "Net-(U4-Pad101)" "Net-(D3-Pad1)" "Net-(U4-Pad109)" "Net-(U4-Pad110)" "Net-(U4-Pad114)" "Net-(U4-Pad117)" "Net-(U4-Pad118)"
+    "Net-(U4-Pad119)" "Net-(U4-Pad120)" "Net-(U4-Pad121)" "Net-(U4-Pad124)" "Net-(U4-Pad125)" "Net-(U4-Pad126)" "Net-(U4-Pad127)" "Net-(U4-Pad128)"
+    "Net-(U4-Pad129)" "Net-(U4-Pad130)" "Net-(U4-Pad131)" "Net-(U4-Pad141)" "Net-(U4-Pad142)" "Net-(U4-Pad143)" "Net-(U4-Pad144)" /Sheet2/RST
+    /Sheet2/SPI0 /Sheet2/SPI1 /Sheet2/SPI2 /Sheet2/SPI3 /Sheet2/V3.3OUT "Net-(U8-Pad24)" "Net-(U8-Pad23)" "Net-(U8-Pad22)"
+    "Net-(U8-Pad21)" "Net-(U8-Pad20)" "Net-(U8-Pad19)" "Net-(U8-Pad18)" "Net-(U8-Pad17)" "Net-(K1-Pad4)" "Net-(K2-Pad3)" "Net-(Q1-Pad1)"
+    "Net-(Q2-Pad1)" /Sheet1/FMCA24 "Net-(U3-Pad113)" "/Sheet1/UART4_RX" "/Sheet1/UART4_TX" /Sheet1/FMCA22 /Sheet1/FMCA21 /Sheet1/FMCA20
+    /Sheet1/FMCA19 /Sheet1/FMCA23 "Net-(R9-Pad1)" /sheet3/SPI0 /sheet3/SPI1 "Net-(R12-Pad1)" "Net-(R13-Pad1)" "Net-(R16-Pad1)"
+    "Net-(R17-Pad1)" "Net-(R18-Pad1)" /sheet3/SPI3 /sheet3/SPI2 /sheet3/FMCNBL0 /sheet3/FMCNBL1
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
