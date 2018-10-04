@@ -1,4 +1,6 @@
 EESchema Schematic File Version 4
+LIBS:power
+LIBS:74xx
 LIBS:stm32f446zetx
 LIBS:design_emb-cache
 EELAYER 26 0
@@ -49,13 +51,13 @@ SPI_SCLK
 Text Label 8350 11350 0    60   ~ 0
 SPI_SS
 Wire Wire Line
-	6150 11700 7700 11700
+	9100 13600 7550 13600
 Wire Wire Line
-	6150 11800 7700 11800
+	9100 13700 7550 13700
 Wire Wire Line
-	6150 11900 7700 11900
+	9100 13800 7550 13800
 Wire Wire Line
-	6150 12000 7700 12000
+	9100 13900 7550 13900
 Wire Wire Line
 	11500 11800 11500 12000
 Wire Wire Line
@@ -565,18 +567,10 @@ Wire Wire Line
 Wire Wire Line
 	14100 2450 13850 2450
 Connection ~ 14100 2950
-Text HLabel 5950 11300 0    60   BiDi ~ 0
+Text HLabel 9300 13400 2    60   BiDi ~ 0
 ICESPI[3...0]
-Entry Wire Line
-	6050 12100 6150 12000
-Entry Wire Line
-	6050 12000 6150 11900
-Entry Wire Line
-	6050 11900 6150 11800
-Entry Wire Line
-	6050 11800 6150 11700
 Wire Bus Line
-	6050 11300 5950 11300
+	9200 13400 9300 13400
 Wire Wire Line
 	14100 2650 14350 2650
 Wire Wire Line
@@ -1115,7 +1109,7 @@ L device:R R9
 U 1 1 5BCE07AD
 P 17950 9500
 F 0 "R9" V 18050 9500 50  0000 C CNN
-F 1 "4.7k" V 18100 9500 50  0000 C CNN
+F 1 "10k" V 18100 9500 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 17880 9500 50  0001 C CNN
 F 3 "" H 17950 9500 50  0001 C CNN
 	1    17950 9500
@@ -1129,7 +1123,7 @@ Wire Wire Line
 	17950 9350 18900 9350
 Text HLabel 20550 8900 1    60   Input ~ 0
 +3V3_FPGA
-Text HLabel 17950 9650 2    60   Input ~ 0
+Text HLabel 17950 9650 3    60   Input ~ 0
 +3V3_FPGA
 Text Label 15600 8800 0    60   ~ 0
 CTRL1
@@ -1289,25 +1283,25 @@ Text Label 19500 6650 0    60   ~ 0
 FMCA23
 Text Label 19500 6750 0    60   ~ 0
 FMCA24
-Text Label 16300 8400 0    60   ~ 0
+Text Label 15150 8400 0    60   ~ 0
 FMCNBL0
-Text Label 16300 8500 0    60   ~ 0
+Text Label 15150 8500 0    60   ~ 0
 FMCNBL1
-Text Label 6250 11700 0    60   ~ 0
+Text Label 8850 13900 2    60   ~ 0
 SPI3
-Text Label 6250 11800 0    60   ~ 0
+Text Label 8850 13800 2    60   ~ 0
 SPI2
-Text Label 6250 11900 0    60   ~ 0
+Text Label 8850 13700 2    60   ~ 0
 SPI1
-Text Label 6250 12000 0    60   ~ 0
+Text Label 8850 13600 2    60   ~ 0
 SPI0
-Text Label 7700 11700 0    60   ~ 0
+Text Label 7700 13900 0    60   ~ 0
 SPI_MISO
-Text Label 7700 11800 0    60   ~ 0
+Text Label 7700 13800 0    60   ~ 0
 SPI_MOSI
-Text Label 7700 11900 0    60   ~ 0
+Text Label 7700 13700 0    60   ~ 0
 SPI_SCLK
-Text Label 7700 12000 0    60   ~ 0
+Text Label 7700 13600 0    60   ~ 0
 SPI_SS
 Wire Wire Line
 	7700 11050 9250 11050
@@ -1318,17 +1312,31 @@ Wire Wire Line
 Wire Wire Line
 	7700 11350 9250 11350
 Wire Wire Line
-	14400 8500 16900 8500
+	14400 8500 15800 8500
 Wire Wire Line
-	14400 8400 16900 8400
-Text HLabel 16900 8400 2    60   BiDi ~ 0
-FMCNBL0
-Text HLabel 16900 8500 2    60   BiDi ~ 0
-FMCNBL1
+	14400 8400 15800 8400
+Entry Wire Line
+	15800 8400 15900 8300
+Entry Wire Line
+	15800 8500 15900 8400
+Wire Bus Line
+	15900 8250 16100 8250
+Text HLabel 16100 8250 2    60   BiDi ~ 0
+ICENBL[1.0]
+Entry Wire Line
+	9200 13800 9100 13900
+Entry Wire Line
+	9200 13700 9100 13800
+Entry Wire Line
+	9200 13600 9100 13700
+Entry Wire Line
+	9200 13500 9100 13600
+Wire Bus Line
+	15900 8250 15900 8400
 Wire Bus Line
 	16350 8600 16350 10300
 Wire Bus Line
-	6050 11300 6050 12100
+	9200 13400 9200 13800
 Wire Bus Line
 	20050 5800 20050 6750
 Wire Bus Line

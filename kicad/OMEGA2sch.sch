@@ -1,4 +1,6 @@
 EESchema Schematic File Version 4
+LIBS:power
+LIBS:74xx
 LIBS:stm32f446zetx
 LIBS:design_emb-cache
 EELAYER 26 0
@@ -434,13 +436,13 @@ Wire Wire Line
 Text Label 3200 2900 0    60   ~ 0
 RST
 Wire Wire Line
-	1650 4550 3050 4550
+	3450 6450 4550 6450
 Wire Wire Line
-	1650 4650 3050 4650
+	3450 6550 4550 6550
 Wire Wire Line
-	1650 4750 3050 4750
+	3450 6650 4550 6650
 Wire Wire Line
-	1650 4850 3050 4850
+	3450 6750 4550 6750
 Text Label 3000 3300 0    60   ~ 0
 SPI_SS
 Text Label 3000 3400 0    60   ~ 0
@@ -450,16 +452,16 @@ SPI_MOSI
 Text Label 3000 3600 0    60   ~ 0
 SPI_MISO
 Entry Wire Line
-	1550 4450 1650 4550
+	3350 6350 3450 6450
 Entry Wire Line
-	1550 4550 1650 4650
+	3350 6450 3450 6550
 Entry Wire Line
-	1550 4650 1650 4750
+	3350 6550 3450 6650
 Entry Wire Line
-	1550 4750 1650 4850
+	3350 6650 3450 6750
 Wire Bus Line
-	1550 4350 1400 4350
-Text HLabel 1400 4350 0    60   BiDi ~ 0
+	3350 6250 3200 6250
+Text HLabel 3200 6250 0    60   BiDi ~ 0
 OMEGASPI[3...0]
 Wire Wire Line
 	3450 3800 3050 3800
@@ -543,21 +545,21 @@ Entry Wire Line
 	3350 5800 3450 5900
 Wire Bus Line
 	3350 5300 3050 5300
-Text Label 1850 4550 0    60   ~ 0
+Text Label 3650 6450 0    60   ~ 0
 SPI0
-Text Label 1850 4650 0    60   ~ 0
+Text Label 3650 6550 0    60   ~ 0
 SPI1
-Text Label 1850 4750 0    60   ~ 0
+Text Label 3650 6650 0    60   ~ 0
 SPI2
-Text Label 1850 4850 0    60   ~ 0
+Text Label 3650 6750 0    60   ~ 0
 SPI3
-Text Label 3050 4550 0    60   ~ 0
+Text Label 4050 6450 0    60   ~ 0
 SPI_SS
-Text Label 3050 4650 0    60   ~ 0
+Text Label 4050 6550 0    60   ~ 0
 SPI_SCLK
-Text Label 3050 4750 0    60   ~ 0
+Text Label 4050 6650 0    60   ~ 0
 SPI_MOSI
-Text Label 3050 4850 0    60   ~ 0
+Text Label 4050 6750 0    60   ~ 0
 SPI_MISO
 Wire Wire Line
 	2050 3300 3450 3300
@@ -568,7 +570,7 @@ Wire Wire Line
 Wire Wire Line
 	2050 3600 3450 3600
 Wire Bus Line
-	1550 4350 1550 4750
+	3350 6250 3350 6650
 Wire Bus Line
 	3350 5300 3350 5800
 $EndSCHEMATC
