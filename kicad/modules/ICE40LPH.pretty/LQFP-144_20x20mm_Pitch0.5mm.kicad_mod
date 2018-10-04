@@ -1,4 +1,4 @@
-(module Housings_QFP:LQFP-144_20x20mm_Pitch0.5mm (layer F.Cu) (tedit 5BB56780)
+(module LQFP-144_20x20mm_Pitch0.5mm (layer F.Cu) (tedit 5BB65B2F)
   (descr "144-Lead Plastic Low Profile Quad Flatpack (PL) - 20x20x1.40 mm Body [LQFP], 2.00 mm Footprint (see Microchip Packaging Specification 00000049BS.pdf)")
   (tags "QFP 0.5")
   (attr smd)

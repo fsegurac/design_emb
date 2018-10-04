@@ -1,4 +1,6 @@
 EESchema Schematic File Version 4
+LIBS:power
+LIBS:74xx
 LIBS:stm32f446zetx
 LIBS:design_emb-cache
 EELAYER 26 0
@@ -460,7 +462,7 @@ Entry Wire Line
 Wire Bus Line
 	3350 6250 3200 6250
 Text HLabel 3200 6250 0    60   BiDi ~ 0
-OMEGASPI[3...0]
+SPI[3...0]
 Wire Wire Line
 	3450 3800 3050 3800
 Wire Wire Line
@@ -560,10 +562,10 @@ SPI_MOSI
 Text Label 4050 6750 0    60   ~ 0
 SPI_MISO
 $Comp
-L device:R R?
+L device:R R9
 U 1 1 5BBC0EB6
 P 3150 3300
-F 0 "R?" V 3100 3400 50  0000 L CNN
+F 0 "R9" V 3100 3400 50  0000 L CNN
 F 1 "100" V 3150 3200 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 3080 3300 50  0001 C CNN
 F 3 "" H 3150 3300 50  0001 C CNN
@@ -571,10 +573,10 @@ F 3 "" H 3150 3300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R?
+L device:R R16
 U 1 1 5BBE0B56
 P 3150 3400
-F 0 "R?" V 3100 3500 50  0000 L CNN
+F 0 "R16" V 3100 3500 50  0000 L CNN
 F 1 "100" V 3150 3300 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 3080 3400 50  0001 C CNN
 F 3 "" H 3150 3400 50  0001 C CNN
@@ -582,10 +584,10 @@ F 3 "" H 3150 3400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R?
+L device:R R17
 U 1 1 5BBE0BBD
 P 3150 3500
-F 0 "R?" V 3100 3600 50  0000 L CNN
+F 0 "R17" V 3100 3600 50  0000 L CNN
 F 1 "100" V 3150 3400 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 3080 3500 50  0001 C CNN
 F 3 "" H 3150 3500 50  0001 C CNN
@@ -593,10 +595,10 @@ F 3 "" H 3150 3500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R?
+L device:R R18
 U 1 1 5BBE2478
 P 3150 3600
-F 0 "R?" V 3100 3700 50  0000 L CNN
+F 0 "R18" V 3100 3700 50  0000 L CNN
 F 1 "100" V 3150 3500 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 3080 3600 50  0001 C CNN
 F 3 "" H 3150 3600 50  0001 C CNN

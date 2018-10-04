@@ -1,4 +1,6 @@
 EESchema Schematic File Version 4
+LIBS:power
+LIBS:74xx
 LIBS:stm32f446zetx
 LIBS:design_emb-cache
 EELAYER 26 0
@@ -578,9 +580,9 @@ F 3 "" H 13400 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	15400 6450 15900 6450
+	15400 6750 15900 6750
 Wire Wire Line
-	15400 6550 15900 6550
+	15400 6850 15900 6850
 Wire Wire Line
 	5650 6650 6000 6650
 Wire Wire Line
@@ -605,9 +607,9 @@ F 3 "~" H 12900 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	15400 6350 15900 6350
+	15400 6650 15900 6650
 Wire Wire Line
-	15900 6250 15400 6250
+	15900 6550 15400 6550
 Wire Wire Line
 	6100 2600 6500 2600
 Wire Wire Line
@@ -1006,12 +1008,6 @@ Wire Wire Line
 	15400 7250 15900 7250
 Text Label 15500 7250 0    60   ~ 0
 JTCK_S
-Text Label 15550 6250 0    60   ~ 0
-USR8
-Text Label 15550 6450 0    60   ~ 0
-USR10
-Text Label 15550 6550 0    60   ~ 0
-USR11
 Wire Wire Line
 	15400 7850 15900 7850
 Text Label 15500 7850 0    60   ~ 0
@@ -1121,67 +1117,33 @@ OUT_REL1
 Text HLabel 5550 7650 0    61   Input ~ 0
 OUT_REL2
 Wire Wire Line
-	15400 5850 15900 5850
-Text Label 15550 5850 0    60   ~ 0
-USR4
-Wire Wire Line
-	15400 5950 15900 5950
-Text Label 15550 5950 0    60   ~ 0
-USR5
-Wire Wire Line
-	15400 6050 15900 6050
-Text Label 15550 6050 0    60   ~ 0
-USR6
-Wire Wire Line
 	15400 6150 15900 6150
-Text Label 15550 6150 0    60   ~ 0
-USR7
-Text Label 15550 6350 0    60   ~ 0
-USR9
+Wire Wire Line
+	15400 6250 15900 6250
+Wire Wire Line
+	15400 6350 15900 6350
+Wire Wire Line
+	15400 6450 15900 6450
 Wire Wire Line
 	15400 8550 15900 8550
-Text Label 15550 8550 0    60   ~ 0
-USR13
 Wire Wire Line
 	15400 8650 15900 8650
-Text Label 15550 8650 0    60   ~ 0
-USR14
 Wire Wire Line
 	15400 8750 15900 8750
-Text Label 15550 8750 0    60   ~ 0
-USR15
 Wire Wire Line
 	15400 8850 15900 8850
-Text Label 15550 8850 0    60   ~ 0
-USR16
 Wire Wire Line
 	15400 8950 15900 8950
-Text Label 15550 8950 0    60   ~ 0
-USR17
 Wire Wire Line
 	15400 9050 15900 9050
-Text Label 15550 9050 0    60   ~ 0
-USR18
 Wire Wire Line
-	15400 7550 15900 7550
-Text Label 15550 7550 0    60   ~ 0
-USR14
+	15400 9850 15900 9850
 Wire Wire Line
-	15400 9350 15900 9350
-Text Label 15550 9350 0    60   ~ 0
-USR1
+	15400 9950 15900 9950
 Wire Wire Line
-	15400 9450 15900 9450
-Text Label 15550 9450 0    60   ~ 0
-USR2
+	15400 10050 15900 10050
 Wire Wire Line
-	15400 9550 15900 9550
-Text Label 15550 9550 0    60   ~ 0
-USR3
-Wire Wire Line
-	15400 9650 15900 9650
-Text Label 15550 9650 0    60   ~ 0
-USR12
+	15400 10150 15900 10150
 $Comp
 L conn:Conn_02x10_Counter_Clockwise J6
 U 1 1 5BC08C57
@@ -1195,8 +1157,6 @@ F 3 "~" H 20400 12500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	19700 12100 20200 12100
-Wire Wire Line
-	20200 12200 19700 12200
 Wire Wire Line
 	20200 12300 19700 12300
 Wire Wire Line
@@ -1213,6 +1173,10 @@ Wire Wire Line
 	20200 12900 19700 12900
 Wire Wire Line
 	20200 13000 19700 13000
+Wire Wire Line
+	21200 13000 20700 13000
+Wire Wire Line
+	19700 12200 20200 12200
 Wire Wire Line
 	21200 12100 20700 12100
 Wire Wire Line
@@ -1231,54 +1195,52 @@ Wire Wire Line
 	21200 12800 20700 12800
 Wire Wire Line
 	21200 12900 20700 12900
-Wire Wire Line
-	21200 13000 20700 13000
 $Comp
 L power:GND #PWR043
 U 1 1 5BD217BB
-P 21200 12100
-F 0 "#PWR043" H 21200 11850 50  0001 C CNN
-F 1 "GND" V 21205 11972 50  0000 R CNN
-F 2 "" H 21200 12100 50  0001 C CNN
-F 3 "" H 21200 12100 50  0001 C CNN
-	1    21200 12100
-	0    -1   -1   0   
+P 19700 12200
+F 0 "#PWR043" H 19700 11950 50  0001 C CNN
+F 1 "GND" V 19705 12072 50  0000 R CNN
+F 2 "" H 19700 12200 50  0001 C CNN
+F 3 "" H 19700 12200 50  0001 C CNN
+	1    19700 12200
+	0    1    1    0   
 $EndComp
-Text Label 19850 12200 0    60   ~ 0
-USR1
 Text Label 19850 12300 0    60   ~ 0
-USR2
+USR1
 Text Label 19850 12400 0    60   ~ 0
-USR3
+USR2
 Text Label 19850 12500 0    60   ~ 0
-USR4
+USR3
 Text Label 19850 12600 0    60   ~ 0
-USR5
+USR4
 Text Label 19850 12700 0    60   ~ 0
-USR6
+USR5
 Text Label 19850 12800 0    60   ~ 0
-USR7
+USR6
 Text Label 19850 12900 0    60   ~ 0
-USR8
+USR7
 Text Label 19850 13000 0    60   ~ 0
+USR8
+Text Label 20850 13000 0    60   ~ 0
 USR9
-Text Label 20750 13000 0    60   ~ 0
-USR10
 Text Label 20750 12900 0    60   ~ 0
-USR11
+USR10
 Text Label 20750 12800 0    60   ~ 0
-USR12
+USR11
 Text Label 20750 12700 0    60   ~ 0
-USR13
+USR12
 Text Label 20750 12600 0    60   ~ 0
-USR14
+USR13
 Text Label 20750 12500 0    60   ~ 0
-USR15
+USR14
 Text Label 20750 12400 0    60   ~ 0
-USR16
+USR15
 Text Label 20750 12300 0    60   ~ 0
-USR17
+USR16
 Text Label 20750 12200 0    60   ~ 0
+USR17
+Text Label 20750 12100 0    60   ~ 0
 USR18
 $Comp
 L device:Crystal_GND24 OSC1
@@ -1676,12 +1638,48 @@ Wire Bus Line
 	3600 10750 3350 10750
 Text HLabel 3350 10750 0    60   BiDi ~ 0
 FMCNBL[1.0]
+Text Label 15450 6150 0    60   ~ 0
+USR1
+Text Label 15450 6250 0    60   ~ 0
+USR2
+Text Label 15450 6350 0    60   ~ 0
+USR3
+Text Label 15450 6450 0    60   ~ 0
+USR4
+Text Label 15450 6550 0    60   ~ 0
+USR5
+Text Label 15500 8550 0    60   ~ 0
+USR6
+Text Label 15500 8650 0    60   ~ 0
+USR7
+Text Label 15500 8750 0    60   ~ 0
+USR8
+Text Label 15500 8850 0    60   ~ 0
+USR9
+Text Label 15500 8950 0    60   ~ 0
+USR10
+Text Label 15500 9050 0    60   ~ 0
+USR11
+Text Label 15550 9850 0    60   ~ 0
+USR12
+Text Label 15550 9950 0    60   ~ 0
+USR13
+Text Label 15550 10050 0    60   ~ 0
+USR14
+Text Label 15550 10150 0    60   ~ 0
+USR15
+Text Label 15450 6650 0    60   ~ 0
+USR16
+Text Label 15450 6750 0    60   ~ 0
+USR17
+Text Label 15450 6850 0    60   ~ 0
+USR18
 Wire Bus Line
 	3600 10750 3600 10950
 Wire Bus Line
-	9650 14800 9650 15300
-Wire Bus Line
 	17350 11050 17350 11550
+Wire Bus Line
+	9650 14800 9650 15300
 Wire Bus Line
 	12850 14450 12850 15300
 Wire Bus Line

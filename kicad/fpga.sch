@@ -1,4 +1,6 @@
 EESchema Schematic File Version 4
+LIBS:power
+LIBS:74xx
 LIBS:stm32f446zetx
 LIBS:design_emb-cache
 EELAYER 26 0
@@ -49,13 +51,13 @@ SPI_SCLK
 Text Label 8350 11350 0    60   ~ 0
 SPI_SS
 Wire Wire Line
-	9100 13600 7550 13600
+	10600 13600 9050 13600
 Wire Wire Line
-	9100 13700 7550 13700
+	10600 13700 9050 13700
 Wire Wire Line
-	9100 13800 7550 13800
+	10600 13800 9050 13800
 Wire Wire Line
-	9100 13900 7550 13900
+	10600 13900 9050 13900
 Wire Wire Line
 	11500 11800 11500 12000
 Wire Wire Line
@@ -171,98 +173,92 @@ NoConn ~ 14400 9800
 NoConn ~ 14400 9900
 NoConn ~ 14400 10000
 Wire Wire Line
-	14400 10100 16250 10100
+	14400 9000 16250 9000
 Wire Wire Line
-	14400 10200 16250 10200
+	14400 9100 16250 9100
 Wire Wire Line
-	14400 10300 16250 10300
+	14400 9200 16250 9200
 Wire Wire Line
-	14400 10400 16250 10400
+	14400 9300 16250 9300
 Wire Wire Line
-	14400 8800 16250 8800
-Text Label 14500 10100 0    60   ~ 0
+	14400 8900 16250 8900
+Text Label 14500 9000 0    60   ~ 0
 FMC_NOE
-Text Label 14500 10200 0    60   ~ 0
+Text Label 14500 9100 0    60   ~ 0
 FMC_NWE
-Text Label 14500 10300 0    60   ~ 0
+Text Label 14500 9200 0    60   ~ 0
 FMC_NWAIT
-Text Label 14500 10400 0    60   ~ 0
+Text Label 14500 9300 0    60   ~ 0
 FMC_NE1
-Text Label 14450 8700 0    60   ~ 0
+Text Label 14550 10400 0    60   ~ 0
 FMC_NAVD
 Wire Bus Line
-	16350 8600 16600 8600
-Text HLabel 16600 8600 2    60   BiDi ~ 0
+	12700 13200 12950 13200
+Text HLabel 12950 13200 2    60   BiDi ~ 0
 CTRL[5...0]
-Text Label 14450 8400 0    60   ~ 0
+Text Label 14450 10700 0    60   ~ 0
 FMC_NB0
-Text Label 14450 8500 0    60   ~ 0
+Text Label 14450 10800 0    60   ~ 0
 FMC_NB1
-Wire Wire Line
-	14400 8700 16250 8700
-Wire Wire Line
-	9250 5800 8700 5800
-Wire Wire Line
-	8700 5700 9250 5700
-Text Label 8850 5700 0    60   ~ 0
+Text Label 14950 5650 2    60   ~ 0
 FMC_D1
-Text Label 8850 5800 0    60   ~ 0
+Text Label 14950 5550 2    60   ~ 0
 FMC_D0
 Wire Wire Line
-	14400 10500 14950 10500
+	14400 8600 14950 8600
 Wire Wire Line
-	14400 10600 14950 10600
-Text Label 14500 10500 0    60   ~ 0
+	14400 8700 14950 8700
+Text Label 14500 8600 0    60   ~ 0
 FMC_D3
-Text Label 14500 10600 0    60   ~ 0
+Text Label 14500 8700 0    60   ~ 0
 FMC_D2
 Wire Wire Line
-	9250 7550 8800 7550
-Text Label 8850 7550 0    60   ~ 0
+	8800 9650 9250 9650
+Text Label 9200 9650 2    60   ~ 0
 FMC_D4
 Wire Wire Line
-	9250 7450 8800 7450
-Text Label 8850 7450 0    60   ~ 0
+	8800 9750 9250 9750
+Text Label 9200 9750 2    60   ~ 0
 FMC_D5
 Wire Wire Line
-	9250 9150 8800 9150
-Text Label 8850 9150 0    60   ~ 0
+	9250 9850 8800 9850
+Text Label 8850 9850 0    60   ~ 0
 FMC_D6
 Wire Wire Line
-	9250 9050 8800 9050
-Text Label 8850 9050 0    60   ~ 0
+	9250 9950 8800 9950
+Text Label 8850 9950 0    60   ~ 0
 FMC_D7
 Wire Wire Line
-	9250 8950 8800 8950
-Text Label 8850 8950 0    60   ~ 0
+	9250 10050 8800 10050
+Text Label 8850 10050 0    60   ~ 0
 FMC_D8
 Wire Wire Line
-	9250 8850 8800 8850
-Text Label 8850 8850 0    60   ~ 0
+	14850 4250 14400 4250
+Text Label 14450 4250 0    60   ~ 0
 FMC_D9
 Wire Wire Line
-	9250 8750 8800 8750
-Text Label 8850 8750 0    60   ~ 0
+	14850 4350 14400 4350
+Text Label 14450 4350 0    60   ~ 0
 FMC_D10
 Wire Wire Line
-	9250 8650 8800 8650
-Text Label 8850 8650 0    60   ~ 0
+	14850 4450 14400 4450
+Text Label 14450 4450 0    60   ~ 0
 FMC_D11
 Wire Wire Line
-	9250 8550 8800 8550
-Text Label 8850 8550 0    60   ~ 0
+	14850 4550 14400 4550
+Text Label 14450 4550 0    60   ~ 0
 FMC_D12
 Wire Wire Line
-	9250 6500 8800 6500
-Text Label 8850 6500 0    60   ~ 0
+	14850 4750 14400 4750
+Text Label 14450 4750 0    60   ~ 0
 FMC_D13
 Wire Wire Line
-	9250 6400 8800 6400
-Text Label 8850 6400 0    60   ~ 0
+	14850 4850 14400 4850
+Text Label 14450 4850 0    60   ~ 0
 FMC_D14
 Wire Wire Line
-	9250 6300 8800 6300
-Text Label 8850 6300 0    60   ~ 0
+	14850 4950 14400 4950
+Text Label 14450 4950 0    60   ~ 0
 FMC_D15
 Entry Wire Line
 	19950 5500 20050 5400
@@ -341,36 +337,36 @@ Wire Bus Line
 Text HLabel 20250 5800 2    60   BiDi ~ 0
 FMCA[24...16]
 Wire Wire Line
-	8700 6200 9250 6200
-Text Label 8800 6200 0    60   ~ 0
+	14400 5050 14950 5050
+Text Label 14500 5050 0    60   ~ 0
 FMC_A16
 Wire Wire Line
-	8700 6100 9250 6100
-Text Label 8800 6100 0    60   ~ 0
+	14400 5750 14950 5750
+Text Label 14500 5750 0    60   ~ 0
 FMC_A17
 Wire Wire Line
-	8700 6000 9250 6000
-Text Label 8800 6000 0    60   ~ 0
+	14400 5850 14950 5850
+Text Label 14500 5850 0    60   ~ 0
 FMC_A18
 Wire Wire Line
-	14400 6850 14950 6850
-Text Label 14500 6850 0    60   ~ 0
+	8700 4400 9250 4400
+Text Label 8800 4400 0    60   ~ 0
 FMC_A19
 Wire Wire Line
-	14400 6750 14950 6750
-Text Label 14500 6750 0    60   ~ 0
+	8700 4500 9250 4500
+Text Label 8800 4500 0    60   ~ 0
 FMC_A20
 Wire Wire Line
-	14400 6650 14950 6650
-Text Label 14500 6650 0    60   ~ 0
+	8700 4600 9250 4600
+Text Label 8800 4600 0    60   ~ 0
 FMC_A21
 Wire Wire Line
-	14400 6550 14950 6550
-Text Label 14500 6550 0    60   ~ 0
+	8700 4300 9250 4300
+Text Label 8800 4300 0    60   ~ 0
 FMC_A22
 Wire Wire Line
-	14400 6950 14950 6950
-Text Label 14500 6950 0    60   ~ 0
+	8700 4200 9250 4200
+Text Label 8800 4200 0    60   ~ 0
 FMC_A23
 Wire Wire Line
 	14400 9400 14950 9400
@@ -513,7 +509,7 @@ U 1 1 5B8D3D93
 P 11900 7200
 F 0 "U4" H 11825 11278 50  0000 C CNN
 F 1 "ICE40HX1K" H 11825 11187 50  0000 C CNN
-F 2 "Housings_QFP:LQFP-144_20x20mm_Pitch0.5mm" H 14100 10975 50  0001 R TNN
+F 2 "ICE40LPH:LQFP-144_20x20mm_Pitch0.5mm" H 14100 10975 50  0001 R TNN
 F 3 "http://www.latticesemi.com/~/media/LatticeSemi/Documents/DataSheets/iCE/iCE40LPHXFamilyDataSheet.pdf" H 9450 10925 50  0001 C CNN
 	1    11900 7200
 	1    0    0    -1  
@@ -565,10 +561,10 @@ Wire Wire Line
 Wire Wire Line
 	14100 2450 13850 2450
 Connection ~ 14100 2950
-Text HLabel 9300 13400 2    60   BiDi ~ 0
-ICESPI[3...0]
+Text HLabel 10800 13400 2    60   BiDi ~ 0
+SPI[3...0]
 Wire Bus Line
-	9200 13400 9300 13400
+	10700 13400 10800 13400
 Wire Wire Line
 	14100 2650 14350 2650
 Wire Wire Line
@@ -795,108 +791,84 @@ Connection ~ 12850 2950
 Wire Wire Line
 	12850 2950 13100 2950
 Wire Wire Line
-	9250 4200 8400 4200
+	4750 4650 3900 4650
 Wire Wire Line
-	9250 4300 8400 4300
+	4750 4750 3900 4750
 Wire Wire Line
-	9250 4400 8400 4400
+	4750 4850 3900 4850
 Wire Wire Line
-	9250 4500 8400 4500
+	4750 4950 3900 4950
 Wire Wire Line
-	9250 4600 8400 4600
+	4750 5050 3900 5050
 Wire Wire Line
-	9250 4700 8400 4700
+	4750 5150 3900 5150
 Wire Wire Line
-	9250 4800 8400 4800
+	4750 5250 3900 5250
 Wire Wire Line
-	9250 4900 8400 4900
+	4750 5350 3900 5350
 Wire Wire Line
-	9250 5000 8400 5000
+	4750 5450 3900 5450
 Wire Wire Line
-	9250 5100 8400 5100
-Text Label 8500 4200 0    60   ~ 0
+	6100 5450 5250 5450
+Text Label 4000 4650 0    60   ~ 0
 GPIO0
-Text Label 8500 4300 0    60   ~ 0
+Text Label 4000 4750 0    60   ~ 0
 GPIO1
-Text Label 8500 4400 0    60   ~ 0
+Text Label 4000 4850 0    60   ~ 0
 GPIO2
-Text Label 8500 4500 0    60   ~ 0
+Text Label 4000 4950 0    60   ~ 0
 GPIO3
-Text Label 8500 4600 0    60   ~ 0
+Text Label 4000 5050 0    60   ~ 0
 GPIO4
-Text Label 8500 4700 0    60   ~ 0
+Text Label 4000 5150 0    60   ~ 0
 GPIO5
-Text Label 8500 4800 0    60   ~ 0
+Text Label 4000 5250 0    60   ~ 0
 GPIO6
-Text Label 8500 4900 0    60   ~ 0
+Text Label 4000 5350 0    60   ~ 0
 GPIO7
-Text Label 8500 5000 0    60   ~ 0
+Text Label 4000 5450 0    60   ~ 0
 GPIO8
-Text Label 8500 5100 0    60   ~ 0
+Text Label 5350 5450 0    60   ~ 0
 GPIO9
 Wire Wire Line
-	14400 4250 15150 4250
+	8500 6600 9250 6600
 Wire Wire Line
-	14400 4350 15150 4350
+	8500 6700 9250 6700
 Wire Wire Line
-	14400 4450 15150 4450
+	8500 8150 9250 8150
 Wire Wire Line
-	14400 4550 15150 4550
+	8500 8250 9250 8250
 Wire Wire Line
-	14400 4750 14450 4750
+	8550 8350 9250 8350
 Wire Wire Line
-	14450 4750 14450 4650
+	8600 8550 9250 8550
 Wire Wire Line
-	14450 4650 15150 4650
+	8650 8650 9250 8650
 Wire Wire Line
-	14400 4850 14500 4850
+	8700 8750 9250 8750
 Wire Wire Line
-	14500 4850 14500 4750
+	8750 8850 9250 8850
 Wire Wire Line
-	14500 4750 15150 4750
-Wire Wire Line
-	14400 4950 14550 4950
-Wire Wire Line
-	14550 4950 14550 4850
-Wire Wire Line
-	14550 4850 15150 4850
-Wire Wire Line
-	14400 5050 14600 5050
-Wire Wire Line
-	14600 5050 14600 4950
-Wire Wire Line
-	14600 4950 15150 4950
-Wire Wire Line
-	14400 5550 14650 5550
-Wire Wire Line
-	14650 5550 14650 5050
-Wire Wire Line
-	14650 5050 15150 5050
-Wire Wire Line
-	14400 5650 14700 5650
-Wire Wire Line
-	14700 5650 14700 5150
-Wire Wire Line
-	14700 5150 15150 5150
-Text Label 14700 4250 0    60   ~ 0
+	8800 8950 9250 8950
+Text Label 8800 6600 0    60   ~ 0
 GPIO10
-Text Label 14700 4350 0    60   ~ 0
+Text Label 8800 6700 0    60   ~ 0
 GPIO11
-Text Label 14700 4450 0    60   ~ 0
+Text Label 8800 8150 0    60   ~ 0
 GPIO12
-Text Label 14700 4550 0    60   ~ 0
+Text Label 8800 8250 0    60   ~ 0
 GPIO13
-Text Label 14700 4650 0    60   ~ 0
+Text Label 8800 8350 0    60   ~ 0
 GPIO14
-Text Label 14700 4750 0    60   ~ 0
+Text Label 8800 8550 0    60   ~ 0
 GPIO15
-Text Label 14700 4850 0    60   ~ 0
+Text Label 8800 8650 0    60   ~ 0
 GPIO16
-Text Label 14700 4950 0    60   ~ 0
+Text Label 8800 8750 0    60   ~ 0
 GPIO17
-Text Label 14700 5050 0    60   ~ 0
+Text Label 8800 8850 0    60   ~ 0
 GPIO18
-Text Label 14750 5150 0    60   ~ 0
+Text Label 8850 8950 0    60   ~ 0
 GPIO19
 Text HLabel 9100 11550 0    60   Input ~ 0
 +3V3_FPGA
@@ -905,97 +877,59 @@ Wire Wire Line
 $Comp
 L conn:Conn_02x11_Counter_Clockwise J5
 U 1 1 5BC29906
-P 8100 4600
-F 0 "J5" H 8150 5317 50  0000 C CNN
-F 1 "Conn_02x11_Counter_Clockwise" H 8150 5226 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_2x11_Pitch2.54mm" H 8100 4600 50  0001 C CNN
-F 3 "~" H 8100 4600 50  0001 C CNN
-	1    8100 4600
+P 4950 4950
+F 0 "J5" H 5000 5667 50  0000 C CNN
+F 1 "Conn_02x11_Counter_Clockwise" H 5000 5576 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_2x11_Pitch2.54mm" H 4950 4950 50  0001 C CNN
+F 3 "~" H 4950 4950 50  0001 C CNN
+	1    4950 4950
 	1    0    0    -1  
 $EndComp
-Text HLabel 8850 4100 2    60   Input ~ 0
+Text HLabel 3850 4550 0    60   Input ~ 0
 +3V3_FPGA
 Wire Wire Line
-	8400 4100 8850 4100
+	5250 5350 6000 5350
 Wire Wire Line
-	7150 4200 7900 4200
+	5250 5250 6000 5250
 Wire Wire Line
-	7150 4300 7900 4300
+	5250 5150 6000 5150
 Wire Wire Line
-	7150 4400 7900 4400
-Wire Wire Line
-	7150 4500 7900 4500
-Wire Wire Line
-	7150 4700 7200 4700
-Wire Wire Line
-	7200 4700 7200 4600
-Wire Wire Line
-	7200 4600 7900 4600
-Wire Wire Line
-	7150 4800 7250 4800
-Wire Wire Line
-	7250 4800 7250 4700
-Wire Wire Line
-	7250 4700 7900 4700
-Wire Wire Line
-	7150 4900 7300 4900
-Wire Wire Line
-	7300 4900 7300 4800
-Wire Wire Line
-	7300 4800 7900 4800
-Wire Wire Line
-	7150 5000 7350 5000
-Wire Wire Line
-	7350 5000 7350 4900
-Wire Wire Line
-	7350 4900 7900 4900
-Wire Wire Line
-	7150 5500 7400 5500
-Wire Wire Line
-	7400 5500 7400 5000
-Wire Wire Line
-	7400 5000 7900 5000
-Wire Wire Line
-	7150 5600 7450 5600
-Wire Wire Line
-	7450 5600 7450 5100
-Wire Wire Line
-	7450 5100 7900 5100
-Text Label 7450 4200 0    60   ~ 0
+	5250 5050 6000 5050
+Text Label 5550 5350 0    60   ~ 0
 GPIO10
-Text Label 7450 4300 0    60   ~ 0
+Text Label 5550 5250 0    60   ~ 0
 GPIO11
-Text Label 7450 4400 0    60   ~ 0
+Text Label 5550 5150 0    60   ~ 0
 GPIO12
-Text Label 7450 4500 0    60   ~ 0
+Text Label 5550 5050 0    60   ~ 0
 GPIO13
-Text Label 7450 4600 0    60   ~ 0
+Text Label 5550 4950 0    60   ~ 0
 GPIO14
-Text Label 7450 4700 0    60   ~ 0
+Text Label 5550 4850 0    60   ~ 0
 GPIO15
-Text Label 7450 4800 0    60   ~ 0
+Text Label 5550 4750 0    60   ~ 0
 GPIO16
-Text Label 7450 4900 0    60   ~ 0
+Text Label 5550 4650 0    60   ~ 0
 GPIO17
-Text Label 7450 5000 0    60   ~ 0
+Text Label 5550 4550 0    60   ~ 0
 GPIO18
-Text Label 7500 5100 0    60   ~ 0
+Text Label 5600 4450 0    60   ~ 0
 GPIO19
 Wire Wire Line
-	7900 4100 7450 4100
+	4750 4450 4300 4450
 Wire Wire Line
-	7450 4100 7450 3850
+	4300 4450 4300 4200
 Wire Wire Line
-	7450 3850 7400 3850
+	4300 4200 4250 4200
 $Comp
 L power:GND #PWR0113
 U 1 1 5BCDECEA
-P 7400 3850
-F 0 "#PWR0113" H 7400 3600 50  0001 C CNN
-F 1 "GND" H 7405 3677 50  0000 C CNN
-F 2 "" H 7400 3850 50  0001 C CNN
-F 3 "" H 7400 3850 50  0001 C CNN
-	1    7400 3850
+P 4250 4200
+F 0 "#PWR0113" H 4250 3950 50  0001 C CNN
+F 1 "GND" H 4255 4027 50  0000 C CNN
+F 2 "" H 4250 4200 50  0001 C CNN
+F 3 "" H 4250 4200 50  0001 C CNN
+	1    4250 4200
 	0    1    1    0   
 $EndComp
 Text HLabel 19500 8350 0    60   Input ~ 0
@@ -1096,15 +1030,15 @@ F 3 "" H 18550 9050 50  0001 C CNN
 $EndComp
 Text HLabel 18550 8900 1    60   Input ~ 0
 +3V3_FPGA
-Text Label 15600 8800 0    60   ~ 0
+Text Label 15600 8900 0    60   ~ 0
 CTRL1
-Text Label 15600 10100 0    60   ~ 0
+Text Label 15600 9000 0    60   ~ 0
 CTRL2
-Text Label 15600 10200 0    60   ~ 0
+Text Label 15600 9100 0    60   ~ 0
 CTRL3
-Text Label 15600 10300 0    60   ~ 0
+Text Label 15600 9200 0    60   ~ 0
 CTRL4
-Text Label 15600 10400 0    60   ~ 0
+Text Label 15600 9300 0    60   ~ 0
 CTRL5
 Wire Wire Line
 	18850 5500 19950 5500
@@ -1138,22 +1072,10 @@ Wire Wire Line
 	18850 4100 19950 4100
 Wire Wire Line
 	18850 4000 19950 4000
-Text Label 14450 8800 0    60   ~ 0
+Text Label 14500 8900 0    60   ~ 0
 FMC_CLK
-Text Label 15600 8700 0    60   ~ 0
+Text Label 15700 10400 0    60   ~ 0
 CTRL0
-Entry Wire Line
-	16250 8700 16350 8600
-Entry Wire Line
-	16250 8800 16350 8700
-Entry Wire Line
-	16250 10100 16350 10000
-Entry Wire Line
-	16250 10200 16350 10100
-Entry Wire Line
-	16250 10300 16350 10200
-Entry Wire Line
-	16250 10400 16350 10300
 Text Label 19450 4000 0    60   ~ 0
 FMCAD0
 Text Label 19450 4100 0    60   ~ 0
@@ -1254,25 +1176,25 @@ Text Label 19500 6650 0    60   ~ 0
 FMCA23
 Text Label 19500 6750 0    60   ~ 0
 FMCA24
-Text Label 15150 8400 0    60   ~ 0
+Text Label 15150 10700 0    60   ~ 0
 FMCNBL0
-Text Label 15150 8500 0    60   ~ 0
+Text Label 15150 10800 0    60   ~ 0
 FMCNBL1
-Text Label 8850 13900 2    60   ~ 0
+Text Label 10350 13900 2    60   ~ 0
 SPI3
-Text Label 8850 13800 2    60   ~ 0
+Text Label 10350 13800 2    60   ~ 0
 SPI2
-Text Label 8850 13700 2    60   ~ 0
+Text Label 10350 13700 2    60   ~ 0
 SPI1
-Text Label 8850 13600 2    60   ~ 0
+Text Label 10350 13600 2    60   ~ 0
 SPI0
-Text Label 7700 13900 0    60   ~ 0
+Text Label 9200 13900 0    60   ~ 0
 SPI_MISO
-Text Label 7700 13800 0    60   ~ 0
+Text Label 9200 13800 0    60   ~ 0
 SPI_MOSI
-Text Label 7700 13700 0    60   ~ 0
+Text Label 9200 13700 0    60   ~ 0
 SPI_SCLK
-Text Label 7700 13600 0    60   ~ 0
+Text Label 9200 13600 0    60   ~ 0
 SPI_SS
 Wire Wire Line
 	7700 11050 9250 11050
@@ -1283,25 +1205,25 @@ Wire Wire Line
 Wire Wire Line
 	7700 11350 9250 11350
 Wire Wire Line
-	14400 8500 15800 8500
+	14400 10800 15800 10800
 Wire Wire Line
-	14400 8400 15800 8400
+	14400 10700 15800 10700
 Entry Wire Line
-	15800 8400 15900 8300
+	15800 10700 15900 10600
 Entry Wire Line
-	15800 8500 15900 8400
+	15800 10800 15900 10700
 Wire Bus Line
-	15900 8250 16100 8250
-Text HLabel 16100 8250 2    60   BiDi ~ 0
-ICENBL[1.0]
+	15900 10550 16100 10550
+Text HLabel 16100 10550 2    60   BiDi ~ 0
+FMCNBL[1.0]
 Entry Wire Line
-	9200 13800 9100 13900
+	10700 13800 10600 13900
 Entry Wire Line
-	9200 13700 9100 13800
+	10700 13700 10600 13800
 Entry Wire Line
-	9200 13600 9100 13700
+	10700 13600 10600 13700
 Entry Wire Line
-	9200 13500 9100 13600
+	10700 13500 10600 13600
 Wire Wire Line
 	20150 9200 21300 9200
 Wire Wire Line
@@ -1316,12 +1238,108 @@ Wire Wire Line
 Connection ~ 20700 9350
 Wire Wire Line
 	20700 9350 21300 9350
+Wire Wire Line
+	15150 5650 14400 5650
+Wire Wire Line
+	15150 5550 14400 5550
+Wire Wire Line
+	14400 10400 16050 10400
+Wire Wire Line
+	11850 13400 12600 13400
+Wire Wire Line
+	11850 13500 12600 13500
+Wire Wire Line
+	11850 13600 12600 13600
+Wire Wire Line
+	11850 13700 12600 13700
+Wire Wire Line
+	11850 13800 12600 13800
+Wire Wire Line
+	11850 13900 12600 13900
+Text Label 12050 13400 0    60   ~ 0
+CTRL0
+Text Label 12050 13500 0    60   ~ 0
+CTRL1
+Text Label 12050 13600 0    60   ~ 0
+CTRL2
+Text Label 12050 13700 0    60   ~ 0
+CTRL3
+Text Label 12050 13800 0    60   ~ 0
+CTRL4
+Text Label 12050 13900 0    60   ~ 0
+CTRL5
+Entry Wire Line
+	12600 13400 12700 13300
+Entry Wire Line
+	12600 13500 12700 13400
+Entry Wire Line
+	12600 13600 12700 13500
+Entry Wire Line
+	12600 13700 12700 13600
+Entry Wire Line
+	12600 13800 12700 13700
+Entry Wire Line
+	12600 13900 12700 13800
+Wire Wire Line
+	9250 5600 8400 5600
+Wire Wire Line
+	9250 5700 8400 5700
+Wire Wire Line
+	9250 5800 8400 5800
+Wire Wire Line
+	9250 5900 8400 5900
+Wire Wire Line
+	9250 6000 8400 6000
+Wire Wire Line
+	9250 6100 8400 6100
+Wire Wire Line
+	9250 6200 8400 6200
+Wire Wire Line
+	9250 6300 8400 6300
+Wire Wire Line
+	9250 6400 8400 6400
+Wire Wire Line
+	9250 6500 8400 6500
+Text Label 8500 5600 0    60   ~ 0
+GPIO0
+Text Label 8500 5700 0    60   ~ 0
+GPIO1
+Text Label 8500 5800 0    60   ~ 0
+GPIO2
+Text Label 8500 5900 0    60   ~ 0
+GPIO3
+Text Label 8500 6000 0    60   ~ 0
+GPIO4
+Text Label 8500 6100 0    60   ~ 0
+GPIO5
+Text Label 8500 6200 0    60   ~ 0
+GPIO6
+Text Label 8500 6300 0    60   ~ 0
+GPIO7
+Text Label 8500 6400 0    60   ~ 0
+GPIO8
+Text Label 8500 6500 0    60   ~ 0
+GPIO9
+Wire Wire Line
+	5250 4450 6000 4450
+Wire Wire Line
+	5250 4550 6000 4550
+Wire Wire Line
+	5250 4650 6000 4650
+Wire Wire Line
+	5250 4750 6000 4750
+Wire Wire Line
+	5250 4850 6000 4850
+Wire Wire Line
+	5250 4950 6000 4950
+Wire Wire Line
+	3850 4550 4750 4550
 Wire Bus Line
-	15900 8250 15900 8400
+	15900 10550 15900 10700
 Wire Bus Line
-	9200 13400 9200 13800
+	10700 13400 10700 13800
 Wire Bus Line
-	16350 8600 16350 10300
+	12700 13200 12700 13800
 Wire Bus Line
 	20050 5800 20050 6750
 Wire Bus Line
