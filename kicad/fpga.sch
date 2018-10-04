@@ -1,6 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:power
-LIBS:74xx
 LIBS:stm32f446zetx
 LIBS:design_emb-cache
 EELAYER 26 0
@@ -51,13 +49,13 @@ SPI_SCLK
 Text Label 8350 11350 0    60   ~ 0
 SPI_SS
 Wire Wire Line
-	7700 11050 9250 11050
+	6150 11700 7700 11700
 Wire Wire Line
-	7700 11150 9250 11150
+	6150 11800 7700 11800
 Wire Wire Line
-	7700 11250 9250 11250
+	6150 11900 7700 11900
 Wire Wire Line
-	7700 11350 9250 11350
+	6150 12000 7700 12000
 Wire Wire Line
 	11500 11800 11500 12000
 Wire Wire Line
@@ -199,21 +197,21 @@ CTRL[5...0]
 Text Label 14450 8400 0    60   ~ 0
 FMC_NBL0
 Wire Wire Line
-	14400 8400 14900 8400
+	14400 8400 15650 8400
 Wire Wire Line
-	14400 8500 14900 8500
+	14400 8500 15650 8500
 Text Label 14450 8500 0    60   ~ 0
 FMC_NBL1
 Entry Wire Line
-	14900 8400 15000 8300
+	15650 8400 15750 8300
 Entry Wire Line
-	14900 8500 15000 8400
+	15650 8500 15750 8400
 Wire Wire Line
 	14400 8700 16250 8700
 Wire Bus Line
-	15000 8200 15100 8200
-Text HLabel 15100 8200 2    60   BiDi ~ 0
-ICE40_ENABLE[1...0]
+	15750 8200 15850 8200
+Text HLabel 15850 8200 2    60   BiDi ~ 0
+ICE40ENABLE[1...0]
 Wire Wire Line
 	9250 5800 8700 5800
 Wire Wire Line
@@ -314,42 +312,26 @@ Wire Bus Line
 	20050 3800 20250 3800
 Text HLabel 20250 3800 2    60   BiDi ~ 0
 FMCAD[15...0]
-Wire Wire Line
-	19400 5850 19950 5850
-Wire Wire Line
-	19400 5950 19950 5950
-Wire Wire Line
-	19400 6050 19950 6050
-Wire Wire Line
-	19400 6150 19950 6150
-Wire Wire Line
-	19400 6250 19950 6250
-Wire Wire Line
-	19400 6350 19950 6350
-Wire Wire Line
-	19400 6450 19950 6450
-Wire Wire Line
-	19400 6550 19950 6550
-Wire Wire Line
-	19400 6650 19950 6650
-Text Label 19500 5850 0    60   ~ 0
+Text Label 18850 5950 0    60   ~ 0
 FMC_A16
-Text Label 19500 5950 0    60   ~ 0
+Text Label 18850 6050 0    60   ~ 0
 FMC_A17
-Text Label 19500 6050 0    60   ~ 0
+Text Label 18850 6150 0    60   ~ 0
 FMC_A18
-Text Label 19500 6150 0    60   ~ 0
+Text Label 18850 6250 0    60   ~ 0
 FMC_A19
-Text Label 19500 6250 0    60   ~ 0
+Text Label 18850 6350 0    60   ~ 0
 FMC_A20
-Text Label 19500 6350 0    60   ~ 0
+Text Label 18850 6450 0    60   ~ 0
 FMC_A21
-Text Label 19500 6450 0    60   ~ 0
+Text Label 18850 6550 0    60   ~ 0
 FMC_A22
-Text Label 19500 6550 0    60   ~ 0
+Text Label 18850 6650 0    60   ~ 0
 FMC_A23
-Text Label 19500 6650 0    60   ~ 0
+Text Label 18850 6750 0    60   ~ 0
 FMC_A24
+Entry Wire Line
+	19950 6750 20050 6650
 Entry Wire Line
 	19950 6650 20050 6550
 Entry Wire Line
@@ -366,12 +348,10 @@ Entry Wire Line
 	19950 6050 20050 5950
 Entry Wire Line
 	19950 5950 20050 5850
-Entry Wire Line
-	19950 5850 20050 5750
 Wire Bus Line
-	20050 5700 20250 5700
-Text HLabel 20250 5700 2    60   BiDi ~ 0
-FMC_A[24...16]
+	20050 5800 20250 5800
+Text HLabel 20250 5800 2    60   BiDi ~ 0
+FMCA[24...16]
 Wire Wire Line
 	8700 6200 9250 6200
 Text Label 8800 6200 0    60   ~ 0
@@ -597,18 +577,18 @@ Wire Wire Line
 Wire Wire Line
 	14100 2450 13850 2450
 Connection ~ 14100 2950
-Text HLabel 7500 10650 0    60   BiDi ~ 0
-ICE40_SPI[3...0]
+Text HLabel 5950 11300 0    60   BiDi ~ 0
+ICE40SPI[3...0]
 Entry Wire Line
-	7600 11450 7700 11350
+	6050 12100 6150 12000
 Entry Wire Line
-	7600 11350 7700 11250
+	6050 12000 6150 11900
 Entry Wire Line
-	7600 11250 7700 11150
+	6050 11900 6150 11800
 Entry Wire Line
-	7600 11150 7700 11050
+	6050 11800 6150 11700
 Wire Bus Line
-	7600 10650 7500 10650
+	6050 11300 5950 11300
 Wire Wire Line
 	14100 2650 14350 2650
 Wire Wire Line
@@ -1285,14 +1265,78 @@ Text Label 18850 5400 0    60   ~ 0
 FMC_D14
 Text Label 18850 5500 0    60   ~ 0
 FMC_D15
+Wire Wire Line
+	18850 5950 19950 5950
+Wire Wire Line
+	18850 6050 19950 6050
+Wire Wire Line
+	18850 6150 19950 6150
+Wire Wire Line
+	18850 6250 19950 6250
+Wire Wire Line
+	18850 6350 19950 6350
+Wire Wire Line
+	18850 6450 19950 6450
+Wire Wire Line
+	18850 6550 19950 6550
+Wire Wire Line
+	18850 6650 19950 6650
+Wire Wire Line
+	18850 6750 19950 6750
+Text Label 19500 5950 0    60   ~ 0
+FMCA16
+Text Label 19500 6050 0    60   ~ 0
+FMCA17
+Text Label 19500 6150 0    60   ~ 0
+FMCA18
+Text Label 19500 6250 0    60   ~ 0
+FMCA19
+Text Label 19500 6350 0    60   ~ 0
+FMCA20
+Text Label 19500 6450 0    60   ~ 0
+FMCA21
+Text Label 19500 6550 0    60   ~ 0
+FMCA22
+Text Label 19500 6650 0    60   ~ 0
+FMCA23
+Text Label 19500 6750 0    60   ~ 0
+FMCA24
+Text Label 15050 8400 0    60   ~ 0
+FMCNBL0
+Text Label 15050 8500 0    60   ~ 0
+FMCNBL1
+Text Label 6250 11700 0    60   ~ 0
+SPI3
+Text Label 6250 11800 0    60   ~ 0
+SPI2
+Text Label 6250 11900 0    60   ~ 0
+SPI1
+Text Label 6250 12000 0    60   ~ 0
+SPI0
+Text Label 7700 11700 0    60   ~ 0
+SPI_MISO
+Text Label 7700 11800 0    60   ~ 0
+SPI_MOSI
+Text Label 7700 11900 0    60   ~ 0
+SPI_SCLK
+Text Label 7700 12000 0    60   ~ 0
+SPI_SS
+Wire Wire Line
+	7700 11050 9250 11050
+Wire Wire Line
+	7700 11150 9250 11150
+Wire Wire Line
+	7700 11250 9250 11250
+Wire Wire Line
+	7700 11350 9250 11350
 Wire Bus Line
-	15000 8200 15000 8500
+	15750 8200 15750 8500
+Wire Bus Line
+	6050 11300 6050 12100
 Wire Bus Line
 	16350 8600 16350 10300
 Wire Bus Line
-	7600 10650 7600 11450
-Wire Bus Line
-	20050 5700 20050 6650
+	20050 5800 20050 6750
 Wire Bus Line
 	20050 3800 20050 5500
 $EndSCHEMATC
