@@ -1,6 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:power
-LIBS:74xx
 LIBS:stm32f446zetx
 LIBS:design_emb-cache
 EELAYER 26 0
@@ -443,13 +441,13 @@ Wire Wire Line
 	3450 6650 4550 6650
 Wire Wire Line
 	3450 6750 4550 6750
-Text Label 3000 3300 0    60   ~ 0
+Text Label 2400 3300 0    60   ~ 0
 SPI_SS
-Text Label 3000 3400 0    60   ~ 0
+Text Label 2400 3400 0    60   ~ 0
 SPI_SCLK
-Text Label 3000 3500 0    60   ~ 0
+Text Label 2400 3500 0    60   ~ 0
 SPI_MOSI
-Text Label 3000 3600 0    60   ~ 0
+Text Label 2400 3600 0    60   ~ 0
 SPI_MISO
 Entry Wire Line
 	3350 6350 3450 6450
@@ -561,16 +559,68 @@ Text Label 4050 6650 0    60   ~ 0
 SPI_MOSI
 Text Label 4050 6750 0    60   ~ 0
 SPI_MISO
+$Comp
+L device:R R?
+U 1 1 5BBC0EB6
+P 3150 3300
+F 0 "R?" V 3100 3400 50  0000 L CNN
+F 1 "100" V 3150 3200 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3080 3300 50  0001 C CNN
+F 3 "" H 3150 3300 50  0001 C CNN
+	1    3150 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5BBE0B56
+P 3150 3400
+F 0 "R?" V 3100 3500 50  0000 L CNN
+F 1 "100" V 3150 3300 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3080 3400 50  0001 C CNN
+F 3 "" H 3150 3400 50  0001 C CNN
+	1    3150 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5BBE0BBD
+P 3150 3500
+F 0 "R?" V 3100 3600 50  0000 L CNN
+F 1 "100" V 3150 3400 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3080 3500 50  0001 C CNN
+F 3 "" H 3150 3500 50  0001 C CNN
+	1    3150 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5BBE2478
+P 3150 3600
+F 0 "R?" V 3100 3700 50  0000 L CNN
+F 1 "100" V 3150 3500 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3080 3600 50  0001 C CNN
+F 3 "" H 3150 3600 50  0001 C CNN
+	1    3150 3600
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	2050 3300 3450 3300
+	3300 3300 3450 3300
 Wire Wire Line
-	2050 3400 3450 3400
+	3300 3400 3450 3400
 Wire Wire Line
-	2050 3500 3450 3500
+	3300 3500 3450 3500
 Wire Wire Line
-	2050 3600 3450 3600
-Wire Bus Line
-	3350 6250 3350 6650
+	3300 3600 3450 3600
+Wire Wire Line
+	1450 3600 3000 3600
+Wire Wire Line
+	1450 3500 3000 3500
+Wire Wire Line
+	1450 3400 3000 3400
+Wire Wire Line
+	1450 3300 3000 3300
 Wire Bus Line
 	3350 5300 3350 5800
+Wire Bus Line
+	3350 6250 3350 6650
 $EndSCHEMATC

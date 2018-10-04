@@ -1,6 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:power
-LIBS:74xx
 LIBS:stm32f446zetx
 LIBS:design_emb-cache
 EELAYER 26 0
@@ -1015,7 +1013,7 @@ F 3 "" H 19500 9750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	19500 9750 19500 9700
-Text Label 20800 9200 0    60   ~ 0
+Text Label 20450 9200 0    60   ~ 0
 SPI_MISO
 Text Label 18400 9350 0    60   ~ 0
 SPI_MOSI
@@ -1023,8 +1021,6 @@ Text Label 20450 9350 0    60   ~ 0
 SPI_SCLK
 Text Label 18400 9200 0    60   ~ 0
 SPI_SS
-Wire Wire Line
-	20150 9200 20550 9200
 $Comp
 L device:CP1 C52
 U 1 1 5BC11EAD
@@ -1045,7 +1041,7 @@ L device:R R11
 U 1 1 5BC2563C
 P 21100 9350
 F 0 "R11" V 21200 9350 50  0000 C CNN
-F 1 "10k" V 21250 9350 50  0000 C CNN
+F 1 "4.7k" V 21250 9350 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 21030 9350 50  0001 C CNN
 F 3 "" H 21100 9350 50  0001 C CNN
 	1    21100 9350
@@ -1067,9 +1063,7 @@ F 3 "" H 19500 9700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	17750 9200 18900 9200
-Wire Wire Line
-	17750 9350 17950 9350
+	17750 9200 17950 9200
 $Comp
 L power:GND #PWR045
 U 1 1 5BC3509B
@@ -1096,34 +1090,15 @@ Wire Wire Line
 $Comp
 L device:R R10
 U 1 1 5BCE0714
-P 20550 9050
-F 0 "R10" V 20650 9050 50  0000 C CNN
-F 1 "4.7k" V 20700 9050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 20480 9050 50  0001 C CNN
-F 3 "" H 20550 9050 50  0001 C CNN
-	1    20550 9050
+P 17950 9050
+F 0 "R10" V 18050 9050 50  0000 C CNN
+F 1 "4.7k" V 18100 9050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 17880 9050 50  0001 C CNN
+F 3 "" H 17950 9050 50  0001 C CNN
+	1    17950 9050
 	-1   0    0    -1  
 $EndComp
-$Comp
-L device:R R9
-U 1 1 5BCE07AD
-P 17950 9500
-F 0 "R9" V 18050 9500 50  0000 C CNN
-F 1 "10k" V 18100 9500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 17880 9500 50  0001 C CNN
-F 3 "" H 17950 9500 50  0001 C CNN
-	1    17950 9500
-	-1   0    0    -1  
-$EndComp
-Connection ~ 20550 9200
-Wire Wire Line
-	20550 9200 21300 9200
-Connection ~ 17950 9350
-Wire Wire Line
-	17950 9350 18900 9350
-Text HLabel 20550 8900 1    60   Input ~ 0
-+3V3_FPGA
-Text HLabel 17950 9650 3    60   Input ~ 0
+Text HLabel 17950 8900 1    60   Input ~ 0
 +3V3_FPGA
 Text Label 15600 8800 0    60   ~ 0
 CTRL1
@@ -1331,6 +1306,13 @@ Entry Wire Line
 	9200 13600 9100 13700
 Entry Wire Line
 	9200 13500 9100 13600
+Connection ~ 17950 9200
+Wire Wire Line
+	17950 9200 18900 9200
+Wire Wire Line
+	20150 9200 21300 9200
+Wire Wire Line
+	17750 9350 18900 9350
 Wire Bus Line
 	15900 8250 15900 8400
 Wire Bus Line
