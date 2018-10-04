@@ -195,23 +195,11 @@ Wire Bus Line
 Text HLabel 16600 8600 2    60   BiDi ~ 0
 CTRL[5...0]
 Text Label 14450 8400 0    60   ~ 0
-FMC_NBL0
-Wire Wire Line
-	14400 8400 15650 8400
-Wire Wire Line
-	14400 8500 15650 8500
+FMC_NB0
 Text Label 14450 8500 0    60   ~ 0
-FMC_NBL1
-Entry Wire Line
-	15650 8400 15750 8300
-Entry Wire Line
-	15650 8500 15750 8400
+FMC_NB1
 Wire Wire Line
 	14400 8700 16250 8700
-Wire Bus Line
-	15750 8200 15850 8200
-Text HLabel 15850 8200 2    60   BiDi ~ 0
-ICE40ENABLE[1...0]
 Wire Wire Line
 	9250 5800 8700 5800
 Wire Wire Line
@@ -578,7 +566,7 @@ Wire Wire Line
 	14100 2450 13850 2450
 Connection ~ 14100 2950
 Text HLabel 5950 11300 0    60   BiDi ~ 0
-ICE40SPI[3...0]
+ICESPI[3...0]
 Entry Wire Line
 	6050 12100 6150 12000
 Entry Wire Line
@@ -1301,9 +1289,9 @@ Text Label 19500 6650 0    60   ~ 0
 FMCA23
 Text Label 19500 6750 0    60   ~ 0
 FMCA24
-Text Label 15050 8400 0    60   ~ 0
+Text Label 16300 8400 0    60   ~ 0
 FMCNBL0
-Text Label 15050 8500 0    60   ~ 0
+Text Label 16300 8500 0    60   ~ 0
 FMCNBL1
 Text Label 6250 11700 0    60   ~ 0
 SPI3
@@ -1329,12 +1317,18 @@ Wire Wire Line
 	7700 11250 9250 11250
 Wire Wire Line
 	7700 11350 9250 11350
-Wire Bus Line
-	15750 8200 15750 8500
-Wire Bus Line
-	6050 11300 6050 12100
+Wire Wire Line
+	14400 8500 16900 8500
+Wire Wire Line
+	14400 8400 16900 8400
+Text HLabel 16900 8400 2    60   BiDi ~ 0
+FMCNBL0
+Text HLabel 16900 8500 2    60   BiDi ~ 0
+FMCNBL1
 Wire Bus Line
 	16350 8600 16350 10300
+Wire Bus Line
+	6050 11300 6050 12100
 Wire Bus Line
 	20050 5800 20050 6750
 Wire Bus Line

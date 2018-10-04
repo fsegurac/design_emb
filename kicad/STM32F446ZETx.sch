@@ -103,21 +103,21 @@ FMC_NWAIT
 Text Label 15700 11950 0    60   ~ 0
 FMC_NE1
 Wire Wire Line
-	4500 11600 3150 11600
+	3450 10100 2100 10100
 Entry Wire Line
-	3050 11500 3150 11600
+	2000 10000 2100 10100
 Wire Wire Line
-	4500 11500 3150 11500
+	3450 10000 2100 10000
 Entry Wire Line
-	3050 11400 3150 11500
+	2000 9900 2100 10000
 Wire Wire Line
-	4500 11400 3150 11400
+	3450 9900 2100 9900
 Entry Wire Line
-	3050 11300 3150 11400
+	2000 9800 2100 9900
 Wire Wire Line
-	4500 11300 3150 11300
+	3450 9800 2100 9800
 Entry Wire Line
-	3050 11200 3150 11300
+	2000 9700 2100 9800
 Text Label 5800 11550 0    60   ~ 0
 FMC_A19
 Text Label 5800 11650 0    60   ~ 0
@@ -129,23 +129,13 @@ FMC_A22
 Text Label 5800 11450 0    60   ~ 0
 FMC_A23
 Wire Bus Line
-	3050 8900 2800 8900
-Text HLabel 2800 8900 0    60   BiDi ~ 0
+	2000 7400 1750 7400
+Text HLabel 1750 7400 0    60   BiDi ~ 0
 FMCA[24...16]
 Wire Wire Line
-	4500 9000 3150 9000
+	3450 7500 2100 7500
 Text Label 5750 9150 0    60   ~ 0
 FMC_A24
-Entry Wire Line
-	2650 12000 2750 12100
-Entry Wire Line
-	2650 12100 2750 12200
-Wire Bus Line
-	2650 12100 2650 12000
-Wire Bus Line
-	2650 12000 2400 12000
-Text HLabel 2400 12000 0    60   BiDi ~ 0
-FMCNBL[1...0]
 Wire Wire Line
 	16650 13050 18050 13050
 Wire Wire Line
@@ -157,9 +147,9 @@ Entry Wire Line
 Entry Wire Line
 	18050 13150 18150 13250
 Text Label 5750 11250 0    60   ~ 0
-FMC_NBL0
+FMC_NB0
 Text Label 5750 11350 0    60   ~ 0
-FMC_NBL1
+FMC_NB1
 Text Label 15800 8550 0    60   ~ 0
 FMC_NAVD
 Wire Wire Line
@@ -225,7 +215,7 @@ Connection ~ 10450 13250
 Wire Wire Line
 	11350 13250 11350 13500
 Entry Wire Line
-	3050 8900 3150 9000
+	2000 7400 2100 7500
 $Comp
 L power:GND #PWR0101
 U 1 1 5B8782B7
@@ -726,8 +716,6 @@ Wire Wire Line
 Text HLabel 1500 2600 0    60   Input ~ 0
 VDD3V3
 Wire Wire Line
-	15650 11450 16150 11450
-Wire Wire Line
 	12900 2600 13050 2600
 Wire Wire Line
 	13400 2600 13550 2600
@@ -1123,7 +1111,7 @@ Wire Wire Line
 Wire Wire Line
 	15650 8550 17300 8550
 Text HLabel 5950 6250 0    60   Input ~ 0
-VDD_3V3
+VDD3V3
 Wire Wire Line
 	6250 6250 5950 6250
 $Comp
@@ -1617,60 +1605,48 @@ FMCA17
 Text Label 17450 13150 0    60   ~ 0
 FMCA18
 Wire Wire Line
-	4200 12500 3000 12500
+	3850 11350 3850 11050
 Wire Wire Line
-	3000 12500 3000 12200
+	3850 11050 3550 11050
 Wire Wire Line
-	3000 12200 2750 12200
+	3950 11250 3950 10950
 Wire Wire Line
-	4200 12400 3100 12400
-Wire Wire Line
-	3100 12400 3100 12100
-Wire Wire Line
-	3100 12100 2750 12100
-Text Label 3200 12400 0    60   ~ 0
+	3950 10950 3550 10950
+Text Label 4050 11250 0    60   ~ 0
 FMCNBL0
-Text Label 3200 12500 0    60   ~ 0
+Text Label 4050 11350 0    60   ~ 0
 FMCNBL1
 Wire Wire Line
-	3150 11700 4500 11700
+	2100 10200 3450 10200
 Entry Wire Line
-	3050 11600 3150 11700
+	2000 10100 2100 10200
 Text HLabel 9000 2600 0    60   Input ~ 0
 VDD3V3
 Text HLabel 19700 12100 0    60   Input ~ 0
 VDD3V3
-Text Label 4200 12400 0    60   ~ 0
-FMC_NBL0
-Text Label 4200 12500 0    60   ~ 0
-FMC_NBL1
-Wire Wire Line
-	6250 11350 5050 11350
-Wire Wire Line
-	6250 11250 5150 11250
-Text Label 4050 11400 0    60   ~ 0
+Text Label 3000 9900 0    60   ~ 0
 FMC_A19
-Text Label 4050 11500 0    60   ~ 0
+Text Label 3000 10000 0    60   ~ 0
 FMC_A20
-Text Label 4050 11600 0    60   ~ 0
+Text Label 3000 10100 0    60   ~ 0
 FMC_A21
-Text Label 4050 11700 0    60   ~ 0
+Text Label 3000 10200 0    60   ~ 0
 FMC_A22
-Text Label 4050 11300 0    60   ~ 0
+Text Label 3000 9800 0    60   ~ 0
 FMC_A23
-Text Label 4000 9000 0    60   ~ 0
+Text Label 2950 7500 0    60   ~ 0
 FMC_A24
-Text Label 3350 9000 0    60   ~ 0
+Text Label 2300 7500 0    60   ~ 0
 FMCA24
-Text Label 3350 11300 0    60   ~ 0
+Text Label 2300 9800 0    60   ~ 0
 FMCA23
-Text Label 3350 11400 0    60   ~ 0
+Text Label 2300 9900 0    60   ~ 0
 FMCA19
-Text Label 3350 11500 0    60   ~ 0
+Text Label 2300 10000 0    60   ~ 0
 FMCA20
-Text Label 3350 11600 0    60   ~ 0
+Text Label 2300 10100 0    60   ~ 0
 FMCA21
-Text Label 3350 11700 0    60   ~ 0
+Text Label 2300 10200 0    60   ~ 0
 FMCA22
 Wire Wire Line
 	6250 11750 4900 11750
@@ -1700,14 +1676,22 @@ Wire Wire Line
 	15650 10650 16150 10650
 Text HLabel 16150 10650 2    60   Input ~ 0
 UART4_RX
+Wire Wire Line
+	3850 11350 6250 11350
+Wire Wire Line
+	3950 11250 6250 11250
+Text HLabel 3550 10950 0    60   BiDi ~ 0
+FMCNBL0
+Text HLabel 3550 11050 0    60   BiDi ~ 0
+FMCNBL1
 Wire Bus Line
 	18150 13050 18150 13250
 Wire Bus Line
-	20750 5350 20750 5850
-Wire Bus Line
 	17600 11350 17600 11850
 Wire Bus Line
-	3050 8900 3050 11700
+	20750 5350 20750 5850
+Wire Bus Line
+	2000 7400 2000 10200
 Wire Bus Line
 	20600 9700 20600 11200
 $EndSCHEMATC
