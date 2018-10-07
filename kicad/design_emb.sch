@@ -8,12 +8,12 @@ EELAYER END
 $Descr A0 46811 33110
 encoding utf-8
 Sheet 1 6
-Title ""
+Title "OWL_BOARD 1.0"
 Date ""
 Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Comp "Fabio Segura y Freddy Vanegas"
+Comment1 "de la Maestría en Ingeniería Electrónica de la Universidad Nacional de Colombia"
+Comment2 "Tarjeta diseñada para la asiganatura \"Diseño e implementación de sistemas embebidos\""
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -65,97 +65,97 @@ Wire Wire Line
 $Comp
 L ESD_Protection:SRX.X.TCT U?
 U 1 1 5B9A3C31
-P 41100 3350
+P 40900 7250
 AR Path="/5B7D9546/5B9A3C31" Ref="U?"  Part="1" 
 AR Path="/5B9A3C31" Ref="U1"  Part="1" 
-F 0 "U1" H 41000 3150 60  0000 C CNN
-F 1 "SRX.X.TCT" H 41100 3591 60  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-143" H 41100 3350 60  0001 C CNN
-F 3 "https://co.mouser.com/datasheet/2/761/sr2_8-1277654.pdf" H 41100 3350 60  0001 C CNN
-	1    41100 3350
+F 0 "U1" H 40800 7050 60  0000 C CNN
+F 1 "SRX.X.TCT" H 40900 7491 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-143" H 40900 7250 60  0001 C CNN
+F 3 "https://co.mouser.com/datasheet/2/761/sr2_8-1277654.pdf" H 40900 7250 60  0001 C CNN
+	1    40900 7250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	40800 3250 40700 3250
+	40600 7150 40500 7150
 $Comp
 L power:GND #PWR?
 U 1 1 5B9A3C39
-P 40700 3250
+P 40500 7150
 AR Path="/5B7D9546/5B9A3C39" Ref="#PWR?"  Part="1" 
 AR Path="/5B9A3C39" Ref="#PWR01"  Part="1" 
-F 0 "#PWR01" H 40700 3000 50  0001 C CNN
-F 1 "GND" V 40705 3122 50  0000 R CNN
-F 2 "" H 40700 3250 50  0001 C CNN
-F 3 "" H 40700 3250 50  0001 C CNN
-	1    40700 3250
+F 0 "#PWR01" H 40500 6900 50  0001 C CNN
+F 1 "GND" V 40505 7022 50  0000 R CNN
+F 2 "" H 40500 7150 50  0001 C CNN
+F 3 "" H 40500 7150 50  0001 C CNN
+	1    40500 7150
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	40800 3450 40250 3450
+	40600 7350 40050 7350
 $Comp
 L ESD_Protection:SRX.X.TCT U?
 U 1 1 5B9A3C41
-P 41100 3900
+P 40900 7800
 AR Path="/5B7D9546/5B9A3C41" Ref="U?"  Part="1" 
 AR Path="/5B9A3C41" Ref="U2"  Part="1" 
-F 0 "U2" H 41000 3700 60  0000 C CNN
-F 1 "SRX.X.TCT" H 41100 4141 60  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-143" H 41100 3900 60  0001 C CNN
-F 3 "https://co.mouser.com/datasheet/2/761/sr2_8-1277654.pdf" H 41100 3900 60  0001 C CNN
-	1    41100 3900
+F 0 "U2" H 40800 7600 60  0000 C CNN
+F 1 "SRX.X.TCT" H 40900 8041 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-143" H 40900 7800 60  0001 C CNN
+F 3 "https://co.mouser.com/datasheet/2/761/sr2_8-1277654.pdf" H 40900 7800 60  0001 C CNN
+	1    40900 7800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	40800 3800 40700 3800
+	40600 7700 40500 7700
 $Comp
 L power:GND #PWR?
 U 1 1 5B9A3C49
-P 40700 3800
+P 40500 7700
 AR Path="/5B7D9546/5B9A3C49" Ref="#PWR?"  Part="1" 
 AR Path="/5B9A3C49" Ref="#PWR02"  Part="1" 
-F 0 "#PWR02" H 40700 3550 50  0001 C CNN
-F 1 "GND" V 40705 3672 50  0000 R CNN
-F 2 "" H 40700 3800 50  0001 C CNN
-F 3 "" H 40700 3800 50  0001 C CNN
-	1    40700 3800
+F 0 "#PWR02" H 40500 7450 50  0001 C CNN
+F 1 "GND" V 40505 7572 50  0000 R CNN
+F 2 "" H 40500 7700 50  0001 C CNN
+F 3 "" H 40500 7700 50  0001 C CNN
+	1    40500 7700
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	40800 4000 40250 4000
-NoConn ~ 41400 3250
-NoConn ~ 41400 3800
+	40600 7900 40050 7900
+NoConn ~ 41200 7150
+NoConn ~ 41200 7700
 Wire Wire Line
-	42200 3450 41400 3450
+	42000 7350 41200 7350
 Wire Wire Line
-	42200 3550 41500 3550
+	42000 7450 41300 7450
 Wire Wire Line
-	41500 3550 41500 4000
+	41300 7450 41300 7900
 Wire Wire Line
-	41500 4000 41400 4000
-Text Label 42050 3450 2    60   ~ 0
+	41300 7900 41200 7900
+Text Label 41850 7350 2    60   ~ 0
 RX_OUT
-Text Label 42000 3550 2    60   ~ 0
+Text Label 41800 7450 2    60   ~ 0
 TX_IN
 Wire Wire Line
-	42200 3650 42100 3650
+	41700 7650 41600 7650
 Wire Wire Line
-	42100 3650 42100 3850
+	41600 7650 41600 7850
 $Comp
 L power:GND #PWR?
 U 1 1 5B9A3C62
-P 42100 3850
+P 41600 7850
 AR Path="/5B7D9546/5B9A3C62" Ref="#PWR?"  Part="1" 
 AR Path="/5B9A3C62" Ref="#PWR03"  Part="1" 
-F 0 "#PWR03" H 42100 3600 50  0001 C CNN
-F 1 "GND" H 42105 3677 50  0000 C CNN
-F 2 "" H 42100 3850 50  0001 C CNN
-F 3 "" H 42100 3850 50  0001 C CNN
-	1    42100 3850
+F 0 "#PWR03" H 41600 7600 50  0001 C CNN
+F 1 "GND" H 41605 7677 50  0000 C CNN
+F 2 "" H 41600 7850 50  0001 C CNN
+F 3 "" H 41600 7850 50  0001 C CNN
+	1    41600 7850
 	1    0    0    -1  
 $EndComp
-Text Notes 43350 2850 2    197  Italic 0
+Text Notes 43150 6750 2    197  Italic 0
 User serial communication\n\n
-Text Notes 41950 4400 2    98   ~ 0
+Text Notes 41750 8300 2    98   ~ 0
 SR3.3.TCT / SR2.8.TCT
 $Sheet
 S 29900 6650 5200 7550
@@ -170,6 +170,7 @@ F6 "UART_TX" O L 29900 7550 118
 F7 "SPI[3...0]" B L 29900 13750 118
 F8 "JTAG[5...0]" B L 29900 8700 118
 F9 "BOOT0" O L 29900 8950 118
+F10 "V3.3OUT" I R 35100 7850 118
 $EndSheet
 Wire Wire Line
 	22950 7950 26400 7950
@@ -183,9 +184,9 @@ Wire Wire Line
 	26600 7550 29900 7550
 Wire Wire Line
 	26600 7550 26600 8150
-Text Label 40300 3450 0    60   ~ 0
+Text Label 40100 7350 0    60   ~ 0
 SERIAL_RX
-Text Label 40300 4000 0    60   ~ 0
+Text Label 40100 7900 0    60   ~ 0
 SERIAL_TX
 Wire Wire Line
 	35650 7300 35100 7300
@@ -195,19 +196,6 @@ Wire Wire Line
 	35650 7550 35100 7550
 Text Label 35150 7550 0    60   ~ 0
 SERIAL_TX
-$Comp
-L conn:Conn_01x03 J?
-U 1 1 5B9A3C53
-P 42400 3550
-AR Path="/5B7D9546/5B9A3C53" Ref="J?"  Part="1" 
-AR Path="/5B9A3C53" Ref="J1"  Part="1" 
-F 0 "J1" H 42480 3592 50  0000 L CNN
-F 1 "Conn_01x03" H 42480 3501 50  0000 L CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_Altech_AK300-3_P5.00mm" H 42400 3550 50  0001 C CNN
-F 3 "~" H 42400 3550 50  0001 C CNN
-	1    42400 3550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	29900 13150 29100 13150
 Wire Wire Line
@@ -275,4 +263,49 @@ Wire Bus Line
 	26300 18450 30050 18450
 Wire Bus Line
 	22950 14400 26300 14400
+Text Notes 1450 1850 0    591  ~ 118
+OWL_BOARD 1.0
+$Comp
+L conn:Conn_01x04 J1
+U 1 1 5BC4E2DD
+P 42200 7450
+F 0 "J1" H 42280 7442 50  0000 L CNN
+F 1 "Conn_01x04" H 42280 7351 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Horizontal" H 42200 7450 50  0001 C CNN
+F 3 "~" H 42200 7450 50  0001 C CNN
+	1    42200 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L5
+U 1 1 5BC4EA09
+P 41850 7650
+F 0 "L5" V 41672 7650 50  0000 C CNN
+F 1 "L" V 41763 7650 50  0000 C CNN
+F 2 "Inductors_SMD:L_0805_HandSoldering" H 41850 7650 50  0001 C CNN
+F 3 "~" H 41850 7650 50  0001 C CNN
+	1    41850 7650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	35100 7850 35650 7850
+Text Label 35250 7850 0    59   ~ 0
+3V3_O
+Wire Wire Line
+	41500 7900 41500 7550
+Text Label 41500 7850 1    59   ~ 0
+3V3_O
+$Comp
+L Device:L L4
+U 1 1 5BC515BF
+P 41850 7550
+F 0 "L4" V 41672 7550 50  0000 C CNN
+F 1 "L" V 41763 7550 50  0000 C CNN
+F 2 "Inductors_SMD:L_0805_HandSoldering" H 41850 7550 50  0001 C CNN
+F 3 "~" H 41850 7550 50  0001 C CNN
+	1    41850 7550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	41700 7550 41500 7550
 $EndSCHEMATC

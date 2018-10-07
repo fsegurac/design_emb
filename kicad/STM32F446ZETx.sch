@@ -8,12 +8,12 @@ EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
 Sheet 2 6
-Title ""
+Title "OWL_BOARD 1.0 - STM32F44"
 Date ""
 Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Comp "Fabio Segura y Freddy Vanegas"
+Comment1 "de la Maestría en Ingeniería Electrónica de la Universidad Nacional de Colombia"
+Comment2 "Tarjeta diseñada para la asiganatura \"Diseño e implementación de sistemas embebidos\""
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -1109,12 +1109,12 @@ Wire Wire Line
 Wire Wire Line
 	20600 7800 20500 7800
 Wire Wire Line
-	6000 7550 5550 7550
+	6000 9550 5550 9550
 Wire Wire Line
-	6000 7650 5550 7650
-Text HLabel 5550 7550 0    61   Input ~ 0
+	6000 9650 5550 9650
+Text HLabel 5550 9550 0    61   Input ~ 0
 OUT_REL1
-Text HLabel 5550 7650 0    61   Input ~ 0
+Text HLabel 5550 9650 0    61   Input ~ 0
 OUT_REL2
 Wire Wire Line
 	15400 6150 15900 6150
@@ -1198,12 +1198,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR043
 U 1 1 5BD217BB
-P 19700 12200
-F 0 "#PWR043" H 19700 11950 50  0001 C CNN
-F 1 "GND" V 19705 12072 50  0000 R CNN
-F 2 "" H 19700 12200 50  0001 C CNN
-F 3 "" H 19700 12200 50  0001 C CNN
-	1    19700 12200
+P 19350 12200
+F 0 "#PWR043" H 19350 11950 50  0001 C CNN
+F 1 "GND" V 19355 12072 50  0000 R CNN
+F 2 "" H 19350 12200 50  0001 C CNN
+F 3 "" H 19350 12200 50  0001 C CNN
+	1    19350 12200
 	0    1    1    0   
 $EndComp
 Text Label 19850 12300 0    60   ~ 0
@@ -1526,7 +1526,7 @@ Text Label 3800 11050 0    60   ~ 0
 FMCNBL1
 Text HLabel 9000 2600 0    60   Input ~ 0
 VDD3V3
-Text HLabel 19700 12100 0    60   Input ~ 0
+Text HLabel 19350 12100 0    60   Input ~ 0
 VDD3V3
 Wire Wire Line
 	6000 11450 4650 11450
@@ -1674,6 +1674,32 @@ Text Label 15450 6750 0    60   ~ 0
 USR17
 Text Label 15450 6850 0    60   ~ 0
 USR18
+$Comp
+L Device:L L6
+U 1 1 5BC069CE
+P 19550 12100
+F 0 "L6" V 19372 12100 50  0000 C CNN
+F 1 "L" V 19463 12100 50  0000 C CNN
+F 2 "Inductors_SMD:L_0805_HandSoldering" H 19550 12100 50  0001 C CNN
+F 3 "~" H 19550 12100 50  0001 C CNN
+	1    19550 12100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	19400 12100 19350 12100
+$Comp
+L Device:L L7
+U 1 1 5BC191E1
+P 19550 12200
+F 0 "L7" V 19740 12200 50  0000 C CNN
+F 1 "L" V 19649 12200 50  0000 C CNN
+F 2 "Inductors_SMD:L_0805_HandSoldering" H 19550 12200 50  0001 C CNN
+F 3 "~" H 19550 12200 50  0001 C CNN
+	1    19550 12200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	19400 12200 19350 12200
 Wire Bus Line
 	3600 10750 3600 10950
 Wire Bus Line

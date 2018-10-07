@@ -8,12 +8,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 6
-Title ""
+Title "OWL_BOARD 1.0 - Onion Omega2"
 Date ""
 Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Comp "Fabio Segura y Freddy Vanegas"
+Comment1 "de la Maestría en Ingeniería Electrónica de la Universidad Nacional de Colombia"
+Comment2 "Tarjeta diseñada para la asiganatura \"Diseño e implementación de sistemas embebidos\""
 Comment3 ""
 Comment4 ""
 $EndDescr
