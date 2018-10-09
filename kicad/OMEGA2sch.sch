@@ -464,30 +464,30 @@ Wire Bus Line
 Text HLabel 3200 6250 0    60   BiDi ~ 0
 SPI[3...0]
 Wire Wire Line
-	3450 3800 3050 3800
+	3450 3000 3050 3000
 Wire Wire Line
 	3450 3100 3050 3100
 Wire Wire Line
-	3450 3000 3050 3000
-Wire Wire Line
-	3450 4100 3050 4100
+	3450 3800 3050 3800
 Wire Wire Line
 	3450 3900 3050 3900
+Wire Wire Line
+	3450 4100 3050 4100
 Wire Wire Line
 	3450 4000 3050 4000
 Text HLabel 3050 5300 0    60   BiDi ~ 0
 JTAG[5...0]
-Text Label 3200 3000 0    60   ~ 0
+Text Label 3200 3800 0    60   ~ 0
 JTCK
 Text Label 3200 3100 0    60   ~ 0
 JTMS
-Text Label 3200 3800 0    60   ~ 0
+Text Label 3150 3000 0    60   ~ 0
 JTDI
-Text Label 3200 3900 0    60   ~ 0
+Text Label 3150 4100 0    60   ~ 0
 JTDO
-Text Label 3200 4000 0    60   ~ 0
+Text Label 3150 4000 0    60   ~ 0
 JTRST
-Text Label 3200 4100 0    60   ~ 0
+Text Label 3150 3900 0    60   ~ 0
 JNRST
 Text HLabel 3450 2800 0    60   Output ~ 0
 BOOT0
@@ -622,7 +622,7 @@ Wire Wire Line
 Wire Wire Line
 	1450 3300 3000 3300
 Wire Bus Line
-	3350 5300 3350 5800
-Wire Bus Line
 	3350 6250 3350 6650
+Wire Bus Line
+	3350 5300 3350 5800
 $EndSCHEMATC
