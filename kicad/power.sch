@@ -86,7 +86,7 @@ F 3 "" H 5600 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 1750 4200 1750
+	3950 1750 4050 1750
 Wire Wire Line
 	5600 1700 5950 1700
 Text HLabel 6050 1700 2    60   Output ~ 0
@@ -236,7 +236,7 @@ F 3 "" H 5650 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4000 3700 4250 3700
+	4000 3700 4100 3700
 Wire Wire Line
 	5650 3650 6000 3650
 Wire Wire Line
@@ -331,8 +331,6 @@ F 3 "" H 5650 5800 50  0001 C CNN
 	1    5650 5800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4000 5250 4250 5250
 Wire Wire Line
 	5650 5200 6000 5200
 Text HLabel 6100 5200 2    60   Output ~ 0
@@ -443,4 +441,38 @@ $EndComp
 Connection ~ 2300 3100
 Wire Wire Line
 	2300 3100 3000 3100
+$Comp
+L power:+5VA #PWR0115
+U 1 1 5BC0F143
+P 4050 1700
+F 0 "#PWR0115" H 4050 1550 50  0001 C CNN
+F 1 "+5VA" H 4065 1873 50  0000 C CNN
+F 2 "" H 4050 1700 50  0001 C CNN
+F 3 "" H 4050 1700 50  0001 C CNN
+	1    4050 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1700 4050 1750
+Connection ~ 4050 1750
+Wire Wire Line
+	4050 1750 4200 1750
+$Comp
+L power:+5VA #PWR0116
+U 1 1 5BC0FF2E
+P 4100 3650
+F 0 "#PWR0116" H 4100 3500 50  0001 C CNN
+F 1 "+5VA" H 4115 3823 50  0000 C CNN
+F 2 "" H 4100 3650 50  0001 C CNN
+F 3 "" H 4100 3650 50  0001 C CNN
+	1    4100 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3650 4100 3700
+Connection ~ 4100 3700
+Wire Wire Line
+	4100 3700 4250 3700
+Wire Wire Line
+	4000 5250 4250 5250
 $EndSCHEMATC

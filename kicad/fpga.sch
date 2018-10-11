@@ -181,7 +181,7 @@ Wire Wire Line
 Wire Wire Line
 	14400 9300 16250 9300
 Wire Wire Line
-	14400 8900 16250 8900
+	14400 7900 16250 7900
 Text Label 14500 9000 0    60   ~ 0
 FMC_NOE
 Text Label 14500 9100 0    60   ~ 0
@@ -646,23 +646,6 @@ F 3 "" H 14600 2800 50  0001 C CNN
 	1    14600 2800
 	1    0    0    -1  
 $EndComp
-Connection ~ 14600 2650
-Wire Wire Line
-	14600 2650 14850 2650
-Connection ~ 14600 2950
-Wire Wire Line
-	14600 2950 14850 2950
-$Comp
-L device:CP1 C35
-U 1 1 5BA2D39F
-P 14850 2800
-F 0 "C35" H 14850 2900 50  0000 L CNN
-F 1 "100nF" H 14965 2755 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 14888 2650 50  0001 C CNN
-F 3 "" H 14850 2800 50  0001 C CNN
-	1    14850 2800
-	1    0    0    -1  
-$EndComp
 $Comp
 L diode:1N5817 D3
 U 1 1 5BA35AEC
@@ -885,7 +868,7 @@ F 3 "~" H 4950 4950 50  0001 C CNN
 	1    4950 4950
 	1    0    0    -1  
 $EndComp
-Text HLabel 3850 4550 0    60   Input ~ 0
+Text HLabel 3550 4550 0    60   Input ~ 0
 +3V3_FPGA
 Wire Wire Line
 	5250 5350 6000 5350
@@ -933,7 +916,7 @@ F 3 "" H 4250 4200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text HLabel 19500 8350 0    60   Input ~ 0
-+3V3_FPGA
++3V3
 $Comp
 L power:GND #PWR044
 U 1 1 5BB66E4F
@@ -969,7 +952,7 @@ $EndComp
 Wire Wire Line
 	19700 8350 19500 8350
 Text HLabel 20700 9700 3    60   Input ~ 0
-+3V3_FPGA
++3V3
 $Comp
 L device:R R11
 U 1 1 5BC2563C
@@ -1010,9 +993,9 @@ Wire Wire Line
 Wire Wire Line
 	19500 8350 19500 9000
 Text HLabel 18700 9500 0    60   Input ~ 0
-+3V3_FPGA
++3V3
 Text HLabel 20400 9500 3    60   Input ~ 0
-+3V3_FPGA
++3V3
 Wire Wire Line
 	20400 9500 20150 9500
 Wire Wire Line
@@ -1029,8 +1012,8 @@ F 3 "" H 18550 9050 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text HLabel 18550 8900 1    60   Input ~ 0
-+3V3_FPGA
-Text Label 15600 8900 0    60   ~ 0
++3V3
+Text Label 15600 7900 0    60   ~ 0
 CTRL1
 Text Label 15600 9000 0    60   ~ 0
 CTRL2
@@ -1072,7 +1055,7 @@ Wire Wire Line
 	18850 4100 19950 4100
 Wire Wire Line
 	18850 4000 19950 4000
-Text Label 14500 8900 0    60   ~ 0
+Text Label 14500 7900 0    60   ~ 0
 FMC_CLK
 Text Label 15700 10400 0    60   ~ 0
 CTRL0
@@ -1334,6 +1317,17 @@ Wire Wire Line
 	5250 4950 6000 4950
 Wire Wire Line
 	3850 4550 4750 4550
+$Comp
+L Device:L L7
+U 1 1 5BCA4948
+P 3700 4550
+F 0 "L7" V 3522 4550 50  0000 C CNN
+F 1 "L" V 3613 4550 50  0000 C CNN
+F 2 "Inductors_SMD:L_0805_HandSoldering" H 3700 4550 50  0001 C CNN
+F 3 "~" H 3700 4550 50  0001 C CNN
+	1    3700 4550
+	0    1    1    0   
+$EndComp
 Wire Bus Line
 	15900 10550 15900 10700
 Wire Bus Line
