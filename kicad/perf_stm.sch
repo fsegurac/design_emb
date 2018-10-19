@@ -24,7 +24,7 @@ P 4050 3050
 F 0 "D7" H 4050 2834 50  0000 C CNN
 F 1 "D_Schottky" H 4050 2925 50  0000 C CNN
 F 2 "Diodes_SMD:D_SOD-123" H 4050 3050 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Diodes%20PDFs/MBR0580S1_R5.pdf" H 4050 3050 50  0001 C CNN
+F 3 "https://co.mouser.com/datasheet/2/258/1N4148WLP(SOD-882)-479619.pdf" H 4050 3050 50  0001 C CNN
 	1    4050 3050
 	-1   0    0    1   
 $EndComp
@@ -183,7 +183,7 @@ P 4050 5700
 F 0 "D8" H 4050 5484 50  0000 C CNN
 F 1 "D_Schottky" H 4050 5575 50  0000 C CNN
 F 2 "Diodes_SMD:D_SOD-123" H 4050 5700 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Diodes%20PDFs/MBR0580S1_R5.pdf" H 4050 5700 50  0001 C CNN
+F 3 "https://co.mouser.com/datasheet/2/258/1N4148WLP(SOD-882)-479619.pdf" H 4050 5700 50  0001 C CNN
 	1    4050 5700
 	-1   0    0    1   
 $EndComp
