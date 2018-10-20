@@ -760,44 +760,44 @@ Connection ~ 12850 2950
 Wire Wire Line
 	12850 2950 13100 2950
 Wire Wire Line
-	4750 4650 3900 4650
+	4800 4950 3950 4950
 Wire Wire Line
-	4750 4750 3900 4750
+	4800 5050 3950 5050
 Wire Wire Line
-	4750 4850 3900 4850
+	4800 5150 3950 5150
 Wire Wire Line
-	4750 4950 3900 4950
+	4800 5250 3950 5250
 Wire Wire Line
-	4750 5050 3900 5050
+	4800 5350 3950 5350
 Wire Wire Line
-	4750 5150 3900 5150
+	4800 5450 3950 5450
 Wire Wire Line
-	4750 5250 3900 5250
+	4800 5550 3950 5550
 Wire Wire Line
-	4750 5350 3900 5350
+	4800 5650 3950 5650
 Wire Wire Line
-	4750 5450 3900 5450
+	4800 5750 3950 5750
 Wire Wire Line
-	6100 5450 5250 5450
-Text Label 4000 4650 0    60   ~ 0
+	4800 5850 3950 5850
+Text Label 4050 4950 0    60   ~ 0
 GPIO0
-Text Label 4000 4750 0    60   ~ 0
+Text Label 4050 5050 0    60   ~ 0
 GPIO1
-Text Label 4000 4850 0    60   ~ 0
+Text Label 4050 5150 0    60   ~ 0
 GPIO2
-Text Label 4000 4950 0    60   ~ 0
+Text Label 4050 5250 0    60   ~ 0
 GPIO3
-Text Label 4000 5050 0    60   ~ 0
+Text Label 4050 5350 0    60   ~ 0
 GPIO4
-Text Label 4000 5150 0    60   ~ 0
+Text Label 4050 5450 0    60   ~ 0
 GPIO5
-Text Label 4000 5250 0    60   ~ 0
+Text Label 4050 5550 0    60   ~ 0
 GPIO6
-Text Label 4000 5350 0    60   ~ 0
+Text Label 4050 5650 0    60   ~ 0
 GPIO7
-Text Label 4000 5450 0    60   ~ 0
+Text Label 4050 5750 0    60   ~ 0
 GPIO8
-Text Label 5350 5450 0    60   ~ 0
+Text Label 4050 5850 0    60   ~ 0
 GPIO9
 Wire Wire Line
 	8500 6600 9250 6600
@@ -843,62 +843,51 @@ Text HLabel 9100 11550 0    60   Input ~ 0
 +3V3_FPGA
 Wire Wire Line
 	9100 11550 9250 11550
-$Comp
-L conn:Conn_02x11_Counter_Clockwise J5
-U 1 1 5BC29906
-P 4950 4950
-F 0 "J5" H 5000 5667 50  0000 C CNN
-F 1 "Conn_02x11_Counter_Clockwise" H 5000 5576 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_2x11_Pitch2.54mm" H 4950 4950 50  0001 C CNN
-F 3 "~" H 4950 4950 50  0001 C CNN
-	1    4950 4950
-	1    0    0    -1  
-$EndComp
-Text HLabel 3550 4550 0    60   Input ~ 0
+Text HLabel 3600 4850 0    60   Input ~ 0
 +3V3_FPGA
 Wire Wire Line
-	5250 5350 6000 5350
+	5300 5850 6050 5850
 Wire Wire Line
-	5250 5250 6000 5250
+	5300 5750 6050 5750
 Wire Wire Line
-	5250 5150 6000 5150
+	5300 5650 6050 5650
 Wire Wire Line
-	5250 5050 6000 5050
-Text Label 5550 5350 0    60   ~ 0
+	5300 5550 6050 5550
+Text Label 5600 5850 0    60   ~ 0
 GPIO10
-Text Label 5550 5250 0    60   ~ 0
+Text Label 5600 5750 0    60   ~ 0
 GPIO11
-Text Label 5550 5150 0    60   ~ 0
+Text Label 5600 5650 0    60   ~ 0
 GPIO12
-Text Label 5550 5050 0    60   ~ 0
+Text Label 5600 5550 0    60   ~ 0
 GPIO13
-Text Label 5550 4950 0    60   ~ 0
+Text Label 5600 5450 0    60   ~ 0
 GPIO14
-Text Label 5550 4850 0    60   ~ 0
+Text Label 5600 5350 0    60   ~ 0
 GPIO15
-Text Label 5550 4750 0    60   ~ 0
+Text Label 5600 5250 0    60   ~ 0
 GPIO16
-Text Label 5550 4650 0    60   ~ 0
+Text Label 5600 5150 0    60   ~ 0
 GPIO17
-Text Label 5550 4550 0    60   ~ 0
+Text Label 5600 5050 0    60   ~ 0
 GPIO18
-Text Label 5600 4450 0    60   ~ 0
+Text Label 5650 4950 0    60   ~ 0
 GPIO19
 Wire Wire Line
-	4750 4450 4300 4450
+	4800 4750 4350 4750
 Wire Wire Line
-	4300 4450 4300 4200
+	4350 4750 4350 4500
 Wire Wire Line
-	4300 4200 4250 4200
+	4350 4500 4300 4500
 $Comp
 L power:GND #PWR0113
 U 1 1 5BCDECEA
-P 4250 4200
-F 0 "#PWR0113" H 4250 3950 50  0001 C CNN
-F 1 "GND" H 4255 4027 50  0000 C CNN
-F 2 "" H 4250 4200 50  0001 C CNN
-F 3 "" H 4250 4200 50  0001 C CNN
-	1    4250 4200
+P 4300 4500
+F 0 "#PWR0113" H 4300 4250 50  0001 C CNN
+F 1 "GND" H 4305 4327 50  0000 C CNN
+F 2 "" H 4300 4500 50  0001 C CNN
+F 3 "" H 4300 4500 50  0001 C CNN
+	1    4300 4500
 	0    1    1    0   
 $EndComp
 Text HLabel 19500 8350 0    60   Input ~ 0
@@ -1290,28 +1279,28 @@ GPIO8
 Text Label 8500 6500 0    60   ~ 0
 GPIO9
 Wire Wire Line
-	5250 4450 6000 4450
+	5300 4950 6050 4950
 Wire Wire Line
-	5250 4550 6000 4550
+	5300 5050 6050 5050
 Wire Wire Line
-	5250 4650 6000 4650
+	5300 5150 6050 5150
 Wire Wire Line
-	5250 4750 6000 4750
+	5300 5250 6050 5250
 Wire Wire Line
-	5250 4850 6000 4850
+	5300 5350 6050 5350
 Wire Wire Line
-	5250 4950 6000 4950
+	5300 5450 6050 5450
 Wire Wire Line
-	3850 4550 4750 4550
+	3900 4850 4800 4850
 $Comp
 L Device:L L7
 U 1 1 5BCA4948
-P 3700 4550
-F 0 "L7" V 3522 4550 50  0000 C CNN
-F 1 "L" V 3613 4550 50  0000 C CNN
-F 2 "Inductors_SMD:L_0805_HandSoldering" H 3700 4550 50  0001 C CNN
-F 3 "~" H 3700 4550 50  0001 C CNN
-	1    3700 4550
+P 3750 4850
+F 0 "L7" V 3572 4850 50  0000 C CNN
+F 1 "L" V 3663 4850 50  0000 C CNN
+F 2 "Inductors_SMD:L_0805_HandSoldering" H 3750 4850 50  0001 C CNN
+F 3 "~" H 3750 4850 50  0001 C CNN
+	1    3750 4850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -1488,6 +1477,49 @@ Wire Wire Line
 	9250 3800 8700 3800
 Wire Wire Line
 	9250 3900 8700 3900
+Text Label 8800 3800 0    60   ~ 0
+OSC_IN
+Text Label 8800 3900 0    60   ~ 0
+OSC_OUT
+$Comp
+L conn:Conn_02x12_Counter_Clockwise J5
+U 1 1 5BD1720C
+P 5000 5250
+F 0 "J5" H 5050 5967 50  0000 C CNN
+F 1 "Conn_02x12_Counter_Clockwise" H 5050 5876 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_2x12_Pitch2.54mm" H 5000 5250 50  0001 C CNN
+F 3 "~" H 5000 5250 50  0001 C CNN
+	1    5000 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5BD83123
+P 6100 4850
+F 0 "#PWR0104" H 6100 4600 50  0001 C CNN
+F 1 "GND" H 6105 4677 50  0000 C CNN
+F 2 "" H 6100 4850 50  0001 C CNN
+F 3 "" H 6100 4850 50  0001 C CNN
+	1    6100 4850
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5300 4850 6100 4850
+Wire Wire Line
+	6200 4750 5300 4750
+$Comp
+L Device:L L8
+U 1 1 5BE1D34D
+P 6350 4750
+F 0 "L8" V 6172 4750 50  0000 C CNN
+F 1 "L" V 6263 4750 50  0000 C CNN
+F 2 "Inductors_SMD:L_0805_HandSoldering" H 6350 4750 50  0001 C CNN
+F 3 "~" H 6350 4750 50  0001 C CNN
+	1    6350 4750
+	0    -1   -1   0   
+$EndComp
+Text HLabel 6500 4750 2    60   Input ~ 0
++3V3
 Wire Bus Line
 	15900 10550 15900 10700
 Wire Bus Line
@@ -1498,8 +1530,4 @@ Wire Bus Line
 	20050 5800 20050 6750
 Wire Bus Line
 	20050 3800 20050 5500
-Text Label 8800 3800 0    60   ~ 0
-OSC_IN
-Text Label 8800 3900 0    60   ~ 0
-OSC_OUT
 $EndSCHEMATC
