@@ -986,8 +986,6 @@ F 3 "" H 18550 9050 50  0001 C CNN
 	1    18550 9050
 	-1   0    0    -1  
 $EndComp
-Text HLabel 18550 8900 1    60   Input ~ 0
-+3V3
 Text Label 15600 7900 0    60   ~ 0
 CTRL1
 Text Label 15600 9000 0    60   ~ 0
@@ -1520,6 +1518,19 @@ F 3 "~" H 6350 4750 50  0001 C CNN
 $EndComp
 Text HLabel 6500 4750 2    60   Input ~ 0
 +3V3
+$Comp
+L power:GND #PWR0117
+U 1 1 5C912591
+P 18550 8850
+F 0 "#PWR0117" H 18550 8600 50  0001 C CNN
+F 1 "GND" H 18555 8677 50  0000 C CNN
+F 2 "" H 18550 8850 50  0001 C CNN
+F 3 "" H 18550 8850 50  0001 C CNN
+	1    18550 8850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	18550 8850 18550 8900
 Wire Bus Line
 	15900 10550 15900 10700
 Wire Bus Line
